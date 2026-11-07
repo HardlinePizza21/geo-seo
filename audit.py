@@ -36,7 +36,7 @@ INSTRUCCIONES = "instrucciones_seo.json"
 GRABACION = "grabacion_campos.json"
 OLLAMA_DEFAULT = {
     "endpoint": "http://127.0.0.1:11434/api/generate",
-    "nombre": "llama3.2:3b",
+    "nombre": "gemma3:4b",
     "timeout": 180,
 }
 # Sin esto el sitio detecta la automatización y no carga el JS de Drupal (menú contextual, etc.)

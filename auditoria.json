@@ -90,7 +90,7 @@
     "excede_limite_abstract",
     "cambio_automatico"
    ],
-   "revisado_en": "2026-11-07T11:55:59",
+   "revisado_en": "2026-11-07T14:05:11",
    "cambios_automaticos": [
     "og_locale"
    ],
@@ -196,7 +196,7 @@
     "excede_limite_abstract",
     "cambio_automatico"
    ],
-   "revisado_en": "2026-11-07T11:56:12",
+   "revisado_en": "2026-11-07T14:05:16",
    "cambios_automaticos": [
     "og_locale"
    ],
@@ -253,10 +253,10 @@
     },
     "keywords": {
      "previo": "",
-     "nuevo": "entidad matriz, nombre de la página/unidad + EAFIT, entidad + ciudad y país, subtemas o trámites + EAFIT, conceptos diferenciadores y alcance/sedes.",
+     "nuevo": "Universidad EAFIT, Descubre y Crea, Revista, Ciencia, Innovación, Sociedad, Edición 176, EAFIT, Colombia",
      "accion": "pendiente_dry_run",
      "origen": "modelo",
-     "modelo": "llama3.2:3b"
+     "modelo": "gemma3:4b"
     },
     "og_title": {
      "previo": "[current-page:title]",
@@ -305,7 +305,7 @@
     "abstract_igual_description",
     "cambio_automatico"
    ],
-   "revisado_en": "2026-11-07T11:56:17",
+   "revisado_en": "2026-11-07T14:05:19",
    "cambios_automaticos": [
     "keywords",
     "og_locale"
@@ -337,7 +337,7 @@
     ]
    },
    "estado": "dry_run_automatico_con_marcas",
-   "modelo_ia": "llama3.2:3b",
+   "modelo_ia": "gemma3:4b",
    "error_modelo": "No se pudo consultar Ollama (llama3.2:3b): 404 Client Error: Not Found for url: http://127.0.0.1:11434/api/generate"
   },
   "https://www.eafit.edu.co/ongoing/cursos-para-emprender": {
@@ -349,7 +349,7 @@
     "imagenes_sin_alt",
     "sin_acceso"
    ],
-   "revisado_en": "2026-11-07T11:56:29",
+   "revisado_en": "2026-11-07T14:05:32",
    "cambios_automaticos": [],
    "og_image": {
     "url": null,
@@ -503,19 +503,26 @@
     "description": {
      "previo": "Los centros de estudio e incidencia de EAFIT impulsan la gestión del conocimiento, creando vínculos entre la Universidad y la sociedad para generar impacto y transformación.",
      "nuevo": "Los centros de estudio e incidencia de EAFIT impulsan la gestión del conocimiento, creando vínculos entre la Universidad y la sociedad para generar impacto y transformación.",
-     "accion": "sin_cambios"
+     "accion": "sin_cambios",
+     "advertencias": [
+      "tiene 173 caracteres; el máximo es 160"
+     ]
     },
     "abstract": {
      "previo": "Los centros de estudio e incidencia de EAFIT impulsan la gestión del conocimiento, creando vínculos entre la Universidad y la sociedad para generar impacto y transformación.",
      "nuevo": "Los centros de estudio e incidencia de EAFIT impulsan la gestión del conocimiento, creando vínculos entre la Universidad y la sociedad para generar impacto y transformación.",
-     "accion": "sin_cambios"
+     "accion": "sin_cambios",
+     "advertencias": [
+      "tiene 173 caracteres; el máximo es 159",
+      "es igual a description"
+     ]
     },
     "keywords": {
      "previo": "",
-     "nuevo": "entidad matriz, nombre de la página/unidad + EAFIT, entidad + ciudad y país, subtemas o trámites + EAFIT, conceptos diferenciadores y alcance/sedes.",
+     "nuevo": "EAFIT, Centros de Estudio e Incidencia, conocimiento, organizaciones, sociedad, EAFIT, impacto, transformación, gestión del conocimiento",
      "accion": "pendiente_dry_run",
      "origen": "modelo",
-     "modelo": "llama3.2:3b"
+     "modelo": "gemma3:4b"
     },
     "og_title": {
      "previo": "[current-page:title]",
@@ -560,9 +567,12 @@
     "sin_selector_og_type",
     "sin_selector_og_image_height",
     "sin_selector_schema_type",
+    "excede_limite_description",
+    "excede_limite_abstract",
+    "abstract_igual_description",
     "cambio_automatico"
    ],
-   "revisado_en": "2026-11-07T11:42:48",
+   "revisado_en": "2026-11-07T14:05:53",
    "cambios_automaticos": [
     "keywords",
     "og_locale"
@@ -594,7 +604,7 @@
     ]
    },
    "estado": "dry_run_automatico_con_marcas",
-   "modelo_ia": "llama3.2:3b"
+   "modelo_ia": "gemma3:4b"
   },
   "https://www.eafit.edu.co/participa": {
    "title": "Participa - Universidad EAFIT",
@@ -726,12 +736,18 @@
     "abstract": {
      "previo": "Descubre la Unidad de proyectos CTeI de la Universidad EAFIT. Impulsamos la innovación, el desarrollo tecnológico y la transferencia de conocimiento conectando la academia con organizaciones en sectores como Agrotech, Healthtech e Industria.",
      "nuevo": "Descubre la Unidad de proyectos CTeI de la Universidad EAFIT. Impulsamos la innovación, el desarrollo tecnológico y la transferencia de conocimiento conectando la academia con organizaciones en sectores como Agrotech, Healthtech e Industria.",
-     "accion": "sin_cambios"
+     "accion": "sin_cambios",
+     "advertencias": [
+      "tiene 241 caracteres; el máximo es 159"
+     ]
     },
     "keywords": {
      "previo": "proyectos CTeI, Universidad EAFIT, innovación tecnológica, desarrollo tecnológico, transferencia de tecnología, servicios para organizaciones, portafolio de tecnologías, Agrotech, Healthtech, industria y manufactura, convocatorias de investigación, vinculación universidad empresa, patentes y tecnologías, ciencia y tecnología, innovación en Medellín.",
      "nuevo": "proyectos CTeI, Universidad EAFIT, innovación tecnológica, desarrollo tecnológico, transferencia de tecnología, servicios para organizaciones, portafolio de tecnologías, Agrotech, Healthtech, industria y manufactura, convocatorias de investigación, vinculación universidad empresa, patentes y tecnologías, ciencia y tecnología, innovación en Medellín.",
-     "accion": "sin_cambios"
+     "accion": "sin_cambios",
+     "advertencias": [
+      "tiene 351 caracteres; el máximo es 255"
+     ]
     },
     "og_title": {
      "previo": "[current-page:title]",
@@ -778,9 +794,11 @@
     "sin_selector_og_type",
     "sin_selector_og_image_height",
     "sin_selector_schema_type",
+    "excede_limite_abstract",
+    "excede_limite_keywords",
     "cambio_automatico"
    ],
-   "revisado_en": "2026-11-07T11:43:13",
+   "revisado_en": "2026-11-07T14:06:00",
    "cambios_automaticos": [
     "og_locale"
    ],
@@ -821,7 +839,7 @@
     "primer_parrafo_ausente",
     "sin_acceso"
    ],
-   "revisado_en": "2026-11-07T11:43:20",
+   "revisado_en": "2026-11-07T14:06:03",
    "revision_contenido": {
     "h1_count": 1,
     "h1": "Inscripciones abiertas Pregrado 2027-1",
@@ -861,17 +879,18 @@
     },
     "abstract": {
      "previo": "",
-     "nuevo": "Descubre las oportunidades de prácticas estudiantiles en organizaciones a través del programa Talento EAFIT y potencia tu desarrollo profesional",
-     "accion": "pendiente_dry_run",
+     "nuevo": null,
+     "accion": "error_modelo",
+     "error": "tiene 195 caracteres; el máximo es 159",
      "origen": "modelo",
-     "modelo": "llama3.2:3b"
+     "modelo": "gemma3:4b"
     },
     "keywords": {
      "previo": "",
-     "nuevo": "Talento EAFIT, prácticas estudiantiles, desarrollo profesional, organizaciones, EAFIT, pasantía, formación especializada",
+     "nuevo": "EAFIT, Talento EAFIT, prácticas estudiantiles, estudiantes, empresas, formación, redes de trabajo",
      "accion": "pendiente_dry_run",
      "origen": "modelo",
-     "modelo": "llama3.2:3b"
+     "modelo": "gemma3:4b"
     },
     "og_title": {
      "previo": "[current-page:title]",
@@ -916,12 +935,12 @@
     "sin_selector_og_type",
     "sin_selector_og_image_height",
     "sin_selector_schema_type",
+    "error_modelo",
     "cambio_automatico"
    ],
-   "revisado_en": "2026-11-07T11:43:49",
+   "revisado_en": "2026-11-07T14:06:27",
    "node_edit": "/node/30331/edit?destination=/node/30331",
    "cambios_automaticos": [
-    "abstract",
     "keywords",
     "og_locale"
    ],
@@ -950,19 +969,231 @@
      }
     ]
    },
-   "error_modelo": "abstract: tiene 197 caracteres; el máximo es 159",
-   "estado": "dry_run_automatico_con_marcas",
-   "modelo_ia": "llama3.2:3b"
+   "error_modelo": "abstract: tiene 195 caracteres; el máximo es 159",
+   "estado": "error_modelo",
+   "modelo_ia": "gemma3:4b"
   },
   "https://www.eafit.edu.co/calendario-eventos": {
    "title": "Calendario eventos - Universidad EAFIT",
    "depth": 1,
-   "status": 200
+   "status": 200,
+   "campos": {
+    "page_title": {
+     "previo": "[node:title] - [site:name]",
+     "nuevo": "[node:title] - [site:name]",
+     "accion": "sin_cambios"
+    },
+    "description": {
+     "previo": "Descubre los eventos de EAFIT: conferencias, seminarios y talleres con expertos nacionales e internacionales. Consulta la agenda y participa.",
+     "nuevo": "Descubre los eventos de EAFIT: conferencias, seminarios y talleres con expertos nacionales e internacionales. Consulta la agenda y participa.",
+     "accion": "sin_cambios"
+    },
+    "abstract": {
+     "previo": "Descubre los eventos de EAFIT: conferencias, seminarios y talleres con expertos nacionales e internacionales. Consulta la agenda y participa.",
+     "nuevo": "Descubre los eventos de EAFIT: conferencias, seminarios y talleres con expertos nacionales e internacionales. Consulta la agenda y participa.",
+     "accion": "sin_cambios",
+     "advertencias": [
+      "es igual a description"
+     ]
+    },
+    "keywords": {
+     "previo": "",
+     "nuevo": "EAFIT, calendario eventos, eventos, conferencias, seminarios, talleres, expertos, nacionales, internacionales, EAFIT, agenda, participación",
+     "accion": "pendiente_dry_run",
+     "origen": "modelo",
+     "modelo": "gemma3:4b"
+    },
+    "og_title": {
+     "previo": "[current-page:title]",
+     "nuevo": "[current-page:title]",
+     "accion": "sin_cambios"
+    },
+    "og_description": {
+     "previo": "[current-page:metatag:description:value]",
+     "nuevo": "[current-page:metatag:description:value]",
+     "accion": "sin_cambios"
+    },
+    "canonical_url": {
+     "previo": "[node:url]",
+     "nuevo": "[node:url]",
+     "accion": "sin_cambios"
+    },
+    "robots_index": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "robots_follow": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "og_image": {
+     "previo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "nuevo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "accion": "sin_cambios"
+    },
+    "og_locale": {
+     "previo": "",
+     "nuevo": "es_CO",
+     "accion": "pendiente_dry_run",
+     "origen": "predeterminado"
+    }
+   },
+   "marcas": [
+    "primer_parrafo_ausente",
+    "sin_selector_schema_name",
+    "sin_selector_schema_description",
+    "sin_selector_og_type",
+    "sin_selector_og_image_height",
+    "sin_selector_schema_type",
+    "abstract_igual_description",
+    "cambio_automatico"
+   ],
+   "revisado_en": "2026-11-07T14:06:34",
+   "revision_contenido": {
+    "h1_count": 1,
+    "h1": "Eventos",
+    "primer_parrafo": "",
+    "imagenes_sin_alt": 0,
+    "instrucciones_pdf": [
+     {
+      "campo": "h1",
+      "instruccion": "Debe existir un único H1 con el nombre completo, no solo la sigla."
+     },
+     {
+      "campo": "primer_parrafo",
+      "instruccion": "Las primeras tres líneas visibles deben explicar qué hace el centro, sus líneas de énfasis y cómo contactarlo."
+     },
+     {
+      "campo": "alt_imagenes",
+      "instruccion": "Revisar que todas las imágenes de la página tengan texto alternativo."
+     }
+    ]
+   },
+   "node_edit": "/node/18151/edit?destination=/node/18151",
+   "modelo_ia": "gemma3:4b",
+   "cambios_automaticos": [
+    "keywords",
+    "og_locale"
+   ],
+   "og_image": {
+    "url": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+    "status": 200,
+    "ok": true
+   },
+   "estado": "dry_run_automatico_con_marcas"
   },
   "https://www.eafit.edu.co/transparencia-y-acceso-la-informacion-publica": {
    "title": "Transparencia y acceso a la información pública - Universidad EAFIT",
    "depth": 1,
-   "status": 200
+   "status": 200,
+   "campos": {
+    "page_title": {
+     "previo": "[node:title] - [site:name]",
+     "nuevo": "[node:title] - [site:name]",
+     "accion": "sin_cambios"
+    },
+    "description": {
+     "previo": "[node:summary]",
+     "nuevo": "[node:summary]",
+     "accion": "sin_cambios"
+    },
+    "abstract": {
+     "previo": "",
+     "nuevo": null,
+     "accion": "error_modelo",
+     "error": "tiene 170 caracteres; el máximo es 159",
+     "origen": "modelo",
+     "modelo": "gemma3:4b"
+    },
+    "keywords": {
+     "previo": "",
+     "nuevo": "EAFIT, Transparencia, acceso a la información pública, cumplimiento de la ley 1712, resolución 1519, índice de transparencia, universidad, Colombia",
+     "accion": "pendiente_dry_run",
+     "origen": "modelo",
+     "modelo": "gemma3:4b"
+    },
+    "og_title": {
+     "previo": "[current-page:title]",
+     "nuevo": "[current-page:title]",
+     "accion": "sin_cambios"
+    },
+    "og_description": {
+     "previo": "[current-page:metatag:description:value]",
+     "nuevo": "[current-page:metatag:description:value]",
+     "accion": "sin_cambios"
+    },
+    "canonical_url": {
+     "previo": "[node:url]",
+     "nuevo": "[node:url]",
+     "accion": "sin_cambios"
+    },
+    "robots_index": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "robots_follow": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "og_image": {
+     "previo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "nuevo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "accion": "sin_cambios"
+    },
+    "og_locale": {
+     "previo": "",
+     "nuevo": "es_CO",
+     "accion": "pendiente_dry_run",
+     "origen": "predeterminado"
+    }
+   },
+   "marcas": [
+    "sin_selector_schema_name",
+    "sin_selector_schema_description",
+    "sin_selector_og_type",
+    "sin_selector_og_image_height",
+    "sin_selector_schema_type",
+    "error_modelo",
+    "cambio_automatico"
+   ],
+   "revisado_en": "2026-11-07T14:06:43",
+   "revision_contenido": {
+    "h1_count": 1,
+    "h1": "Transparencia y acceso a la información pública",
+    "primer_parrafo": "Encontrarás información de las diferentes prácticas de transparencia en la gestión que realiza EAFIT, de acuerdo a la ley 1712 del año 2014 y a la resolución 1519 del año 2020 y en atención al cumplimiento e implementación del índice de transparencia.",
+    "imagenes_sin_alt": 0,
+    "instrucciones_pdf": [
+     {
+      "campo": "h1",
+      "instruccion": "Debe existir un único H1 con el nombre completo, no solo la sigla."
+     },
+     {
+      "campo": "primer_parrafo",
+      "instruccion": "Las primeras tres líneas visibles deben explicar qué hace el centro, sus líneas de énfasis y cómo contactarlo."
+     },
+     {
+      "campo": "alt_imagenes",
+      "instruccion": "Revisar que todas las imágenes de la página tengan texto alternativo."
+     }
+    ]
+   },
+   "node_edit": "/node/16896/edit?destination=/node/16896",
+   "modelo_ia": "gemma3:4b",
+   "error_modelo": "abstract: tiene 170 caracteres; el máximo es 159",
+   "cambios_automaticos": [
+    "keywords",
+    "og_locale"
+   ],
+   "og_image": {
+    "url": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+    "status": 200,
+    "ok": true
+   },
+   "estado": "error_modelo"
   },
   "https://www.eafit.edu.co/trabaja-con-nosotros": {
    "title": "Trabaje con nosotros",

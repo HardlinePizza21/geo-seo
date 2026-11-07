@@ -2,7 +2,7 @@
  "guardar": "#edit-submit",
  "modelo": {
   "endpoint": "http://127.0.0.1:11434/api/generate",
-  "nombre": "llama3.2:3b",
+  "nombre": "gemma3:4b",
   "timeout": 180
  },
  "campos": {
