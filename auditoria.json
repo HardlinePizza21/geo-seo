@@ -1,0 +1,4702 @@
+{
+ "meta": {
+  "seeds": [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion"
+  ],
+  "max_depth": 1,
+  "source": "resultado.json"
+ },
+ "nodes": {
+  "https://www.eafit.edu.co/institucional": {
+   "title": "Información institucional",
+   "depth": 1,
+   "status": 200,
+   "campos": {
+    "page_title": {
+     "previo": "Información institucional",
+     "nuevo": "Información institucional",
+     "accion": "sin_cambios"
+    },
+    "description": {
+     "previo": "Información institucional de la Universidad EAFIT en Medellín, Colombia. Consulta nuestra historia, declaraciones, PEI, estatutos, acreditaciones y ránquines.",
+     "nuevo": "Información institucional de la Universidad EAFIT en Medellín, Colombia. Consulta nuestra historia, declaraciones, PEI, estatutos, acreditaciones y ránquines.",
+     "accion": "sin_cambios"
+    },
+    "abstract": {
+     "previo": "Universidad EAFIT, información institucional EAFIT, Universidad EAFIT Medellín Colombia, PEI EAFIT, historia de EAFIT, estatutos y reglamentos EAFIT, acreditaciones EAFIT, ránquines EAFIT, campus Universidad Parque, sedes EAFIT",
+     "nuevo": "Universidad EAFIT, información institucional EAFIT, Universidad EAFIT Medellín Colombia, PEI EAFIT, historia de EAFIT, estatutos y reglamentos EAFIT, acreditaciones EAFIT, ránquines EAFIT, campus Universidad Parque, sedes EAFIT",
+     "accion": "sin_cambios",
+     "advertencias": [
+      "tiene 227 caracteres; el máximo es 159"
+     ]
+    },
+    "keywords": {
+     "previo": "Universidad EAFIT, información institucional EAFIT, Universidad EAFIT Medellín Colombia, PEI EAFIT, historia de EAFIT, estatutos y reglamentos EAFIT, acreditaciones EAFIT, ránquines EAFIT, campus Universidad Parque, sedes EAFIT",
+     "nuevo": "Universidad EAFIT, información institucional EAFIT, Universidad EAFIT Medellín Colombia, PEI EAFIT, historia de EAFIT, estatutos y reglamentos EAFIT, acreditaciones EAFIT, ránquines EAFIT, campus Universidad Parque, sedes EAFIT",
+     "accion": "sin_cambios"
+    },
+    "og_title": {
+     "previo": "[current-page:title]",
+     "nuevo": "[current-page:title]",
+     "accion": "sin_cambios"
+    },
+    "og_description": {
+     "previo": "[current-page:metatag:description:value]",
+     "nuevo": "[current-page:metatag:description:value]",
+     "accion": "sin_cambios"
+    },
+    "canonical_url": {
+     "previo": "https://www.eafit.edu.co/informacion-institucional",
+     "nuevo": "https://www.eafit.edu.co/informacion-institucional",
+     "accion": "sin_cambios"
+    },
+    "robots_index": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "robots_follow": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "og_image": {
+     "previo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "nuevo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "accion": "sin_cambios"
+    },
+    "og_locale": {
+     "previo": "",
+     "nuevo": "es_CO",
+     "accion": "pendiente_dry_run",
+     "origen": "predeterminado"
+    }
+   },
+   "marcas": [
+    "imagenes_sin_alt",
+    "sin_selector_schema_name",
+    "sin_selector_schema_description",
+    "sin_selector_og_type",
+    "sin_selector_og_image_height",
+    "sin_selector_schema_type",
+    "excede_limite_abstract",
+    "cambio_automatico"
+   ],
+   "revisado_en": "2026-11-07T11:55:59",
+   "cambios_automaticos": [
+    "og_locale"
+   ],
+   "og_image": {
+    "url": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+    "status": 200,
+    "ok": true
+   },
+   "node_edit": "/node/45761/edit?destination=/node/45761",
+   "revision_contenido": {
+    "h1_count": 1,
+    "h1": "Te ​​damos la bienvenida ​a EAFIT",
+    "primer_parrafo": "Somos una comunidad de conocimientos y saberes aplicados para la solución de problemas, en conexión con las organizaciones, que genera valor y desarrollo sostenible.​​",
+    "imagenes_sin_alt": 1,
+    "instrucciones_pdf": [
+     {
+      "campo": "h1",
+      "instruccion": "Debe existir un único H1 con el nombre completo, no solo la sigla."
+     },
+     {
+      "campo": "primer_parrafo",
+      "instruccion": "Las primeras tres líneas visibles deben explicar qué hace el centro, sus líneas de énfasis y cómo contactarlo."
+     },
+     {
+      "campo": "alt_imagenes",
+      "instruccion": "Revisar que todas las imágenes de la página tengan texto alternativo."
+     }
+    ]
+   },
+   "estado": "dry_run_automatico_con_marcas"
+  },
+  "https://www.eafit.edu.co/eafit-global-leaders-y-eafit-global-thinkers": {
+   "title": "EAFIT Global Leaders y EAFIT Global Thinkers - Universidad EAFIT",
+   "depth": 1,
+   "status": 200,
+   "campos": {
+    "page_title": {
+     "previo": "[node:title] - [site:name]",
+     "nuevo": "[node:title] - [site:name]",
+     "accion": "sin_cambios"
+    },
+    "description": {
+     "previo": "[node:summary]",
+     "nuevo": "[node:summary]",
+     "accion": "sin_cambios"
+    },
+    "abstract": {
+     "previo": "EAFIT Global Leaders, EAFIT Global Thinkers, liderazgo global en EAFIT, pensamiento global en EAFIT, Universidad EAFIT Medellín Colombia, liderazgo y pensamiento crítico, perspectivas globales, iniciativas EAFIT",
+     "nuevo": "EAFIT Global Leaders, EAFIT Global Thinkers, liderazgo global en EAFIT, pensamiento global en EAFIT, Universidad EAFIT Medellín Colombia, liderazgo y pensamiento crítico, perspectivas globales, iniciativas EAFIT",
+     "accion": "sin_cambios",
+     "advertencias": [
+      "tiene 211 caracteres; el máximo es 159"
+     ]
+    },
+    "keywords": {
+     "previo": "EAFIT Global Leaders, EAFIT Global Thinkers, liderazgo global en EAFIT, pensamiento global en EAFIT, Universidad EAFIT Medellín Colombia, liderazgo y pensamiento crítico, perspectivas globales, iniciativas EAFIT",
+     "nuevo": "EAFIT Global Leaders, EAFIT Global Thinkers, liderazgo global en EAFIT, pensamiento global en EAFIT, Universidad EAFIT Medellín Colombia, liderazgo y pensamiento crítico, perspectivas globales, iniciativas EAFIT",
+     "accion": "sin_cambios"
+    },
+    "og_title": {
+     "previo": "[current-page:title]",
+     "nuevo": "[current-page:title]",
+     "accion": "sin_cambios"
+    },
+    "og_description": {
+     "previo": "[current-page:metatag:description:value]",
+     "nuevo": "[current-page:metatag:description:value]",
+     "accion": "sin_cambios"
+    },
+    "canonical_url": {
+     "previo": "[node:url]",
+     "nuevo": "[node:url]",
+     "accion": "sin_cambios"
+    },
+    "robots_index": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "robots_follow": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "og_image": {
+     "previo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "nuevo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "accion": "sin_cambios"
+    },
+    "og_locale": {
+     "previo": "",
+     "nuevo": "es_CO",
+     "accion": "pendiente_dry_run",
+     "origen": "predeterminado"
+    }
+   },
+   "marcas": [
+    "sin_selector_schema_name",
+    "sin_selector_schema_description",
+    "sin_selector_og_type",
+    "sin_selector_og_image_height",
+    "sin_selector_schema_type",
+    "excede_limite_abstract",
+    "cambio_automatico"
+   ],
+   "revisado_en": "2026-11-07T11:56:12",
+   "cambios_automaticos": [
+    "og_locale"
+   ],
+   "og_image": {
+    "url": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+    "status": 200,
+    "ok": true
+   },
+   "node_edit": "/node/30041/edit?destination=/node/30041",
+   "revision_contenido": {
+    "h1_count": 1,
+    "h1": "EAFIT Global Leaders y EAFIT Global Thinkers",
+    "primer_parrafo": "Creamos EAFIT Global Leaders y EAFIT Global Thinkers buscando responder algunas preguntas y crear otras nuevas ¿Cómo? Por medio de conversaciones alrededor de temas académicos, coyunturales y estructurales que nos permitan entender y conocer diferentes desafíos o retos y así, plantear diferentes herramientas que nos muestren no uno sino varios caminos, y, sobre todo, podamos construir una red de aprendizaje, impacto y conexión.",
+    "imagenes_sin_alt": 0,
+    "instrucciones_pdf": [
+     {
+      "campo": "h1",
+      "instruccion": "Debe existir un único H1 con el nombre completo, no solo la sigla."
+     },
+     {
+      "campo": "primer_parrafo",
+      "instruccion": "Las primeras tres líneas visibles deben explicar qué hace el centro, sus líneas de énfasis y cómo contactarlo."
+     },
+     {
+      "campo": "alt_imagenes",
+      "instruccion": "Revisar que todas las imágenes de la página tengan texto alternativo."
+     }
+    ]
+   },
+   "estado": "dry_run_automatico_con_marcas"
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/descubre-y-crea/edicion-176": {
+   "title": "Edición 176 - Universidad EAFIT",
+   "depth": 1,
+   "status": 200,
+   "campos": {
+    "page_title": {
+     "previo": "[node:title] - [site:name]",
+     "nuevo": "[node:title] - [site:name]",
+     "accion": "sin_cambios"
+    },
+    "description": {
+     "previo": "Edición 176 de Descubre y Crea: avances, historias y reflexiones sobre ciencia, innovación y sociedad desde la Universidad EAFIT.",
+     "nuevo": "Edición 176 de Descubre y Crea: avances, historias y reflexiones sobre ciencia, innovación y sociedad desde la Universidad EAFIT.",
+     "accion": "sin_cambios"
+    },
+    "abstract": {
+     "previo": "Edición 176 de Descubre y Crea: avances, historias y reflexiones sobre ciencia, innovación y sociedad desde la Universidad EAFIT.",
+     "nuevo": "Edición 176 de Descubre y Crea: avances, historias y reflexiones sobre ciencia, innovación y sociedad desde la Universidad EAFIT.",
+     "accion": "sin_cambios",
+     "advertencias": [
+      "es igual a description"
+     ]
+    },
+    "keywords": {
+     "previo": "",
+     "nuevo": "entidad matriz, nombre de la página/unidad + EAFIT, entidad + ciudad y país, subtemas o trámites + EAFIT, conceptos diferenciadores y alcance/sedes.",
+     "accion": "pendiente_dry_run",
+     "origen": "modelo",
+     "modelo": "llama3.2:3b"
+    },
+    "og_title": {
+     "previo": "[current-page:title]",
+     "nuevo": "[current-page:title]",
+     "accion": "sin_cambios"
+    },
+    "og_description": {
+     "previo": "[current-page:metatag:description:value]",
+     "nuevo": "[current-page:metatag:description:value]",
+     "accion": "sin_cambios"
+    },
+    "canonical_url": {
+     "previo": "[node:url]",
+     "nuevo": "[node:url]",
+     "accion": "sin_cambios"
+    },
+    "robots_index": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "robots_follow": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "og_image": {
+     "previo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "nuevo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "accion": "sin_cambios"
+    },
+    "og_locale": {
+     "previo": "",
+     "nuevo": "es_CO",
+     "accion": "pendiente_dry_run",
+     "origen": "predeterminado"
+    }
+   },
+   "marcas": [
+    "primer_parrafo_ausente",
+    "sin_selector_schema_name",
+    "sin_selector_schema_description",
+    "sin_selector_og_type",
+    "sin_selector_og_image_height",
+    "sin_selector_schema_type",
+    "abstract_igual_description",
+    "cambio_automatico"
+   ],
+   "revisado_en": "2026-11-07T11:56:17",
+   "cambios_automaticos": [
+    "keywords",
+    "og_locale"
+   ],
+   "og_image": {
+    "url": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+    "status": 200,
+    "ok": true
+   },
+   "node_edit": "/node/48651/edit?destination=/node/48651",
+   "revision_contenido": {
+    "h1_count": 1,
+    "h1": "Revista Descubre y Crea",
+    "primer_parrafo": "",
+    "imagenes_sin_alt": 0,
+    "instrucciones_pdf": [
+     {
+      "campo": "h1",
+      "instruccion": "Debe existir un único H1 con el nombre completo, no solo la sigla."
+     },
+     {
+      "campo": "primer_parrafo",
+      "instruccion": "Las primeras tres líneas visibles deben explicar qué hace el centro, sus líneas de énfasis y cómo contactarlo."
+     },
+     {
+      "campo": "alt_imagenes",
+      "instruccion": "Revisar que todas las imágenes de la página tengan texto alternativo."
+     }
+    ]
+   },
+   "estado": "dry_run_automatico_con_marcas",
+   "modelo_ia": "llama3.2:3b",
+   "error_modelo": "No se pudo consultar Ollama (llama3.2:3b): 404 Client Error: Not Found for url: http://127.0.0.1:11434/api/generate"
+  },
+  "https://www.eafit.edu.co/ongoing/cursos-para-emprender": {
+   "title": "Aprender a emprender - Universidad EAFIT",
+   "depth": 1,
+   "status": 200,
+   "campos": {},
+   "marcas": [
+    "imagenes_sin_alt",
+    "sin_acceso"
+   ],
+   "revisado_en": "2026-11-07T11:56:29",
+   "cambios_automaticos": [],
+   "og_image": {
+    "url": null,
+    "status": null,
+    "ok": null,
+    "resultado": "sin_imagen"
+   },
+   "revision_contenido": {
+    "h1_count": 1,
+    "h1": "Aprende a emprender",
+    "primer_parrafo": "Creamos una plataforma de aprendizaje para fortalecer las habilidades necesarias para hacer crecer una idea de negocio, escalar un emprendimiento o un proyecto.",
+    "imagenes_sin_alt": 1,
+    "instrucciones_pdf": [
+     {
+      "campo": "h1",
+      "instruccion": "Debe existir un único H1 con el nombre completo, no solo la sigla."
+     },
+     {
+      "campo": "primer_parrafo",
+      "instruccion": "Las primeras tres líneas visibles deben explicar qué hace el centro, sus líneas de énfasis y cómo contactarlo."
+     },
+     {
+      "campo": "alt_imagenes",
+      "instruccion": "Revisar que todas las imágenes de la página tengan texto alternativo."
+     }
+    ]
+   },
+   "estado": "dry_run_automatico_con_marcas"
+  },
+  "https://www.eafit.edu.co/filantropia/como-donar": {
+   "title": "Cómo dona​​r​​​​​",
+   "depth": 1,
+   "status": 200,
+   "campos": {
+    "page_title": {
+     "previo": "Cómo dona​​r​​​​​",
+     "nuevo": "Cómo dona​​r​​​​​",
+     "accion": "sin_cambios"
+    },
+    "description": {
+     "previo": "Dona en línea, por Bancolombia, transferencia, cheque, o en especie. Contacta a Filantropía EAFIT para más detalles y deducción de nómina en empleados.",
+     "nuevo": "Dona en línea, por Bancolombia, transferencia, cheque, o en especie. Contacta a Filantropía EAFIT para más detalles y deducción de nómina en empleados.",
+     "accion": "sin_cambios"
+    },
+    "abstract": {
+     "previo": "",
+     "nuevo": null,
+     "accion": "error_modelo",
+     "error": "No se pudo consultar Ollama (llama3.2:3b): HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)",
+     "origen": "modelo",
+     "modelo": "llama3.2:3b"
+    },
+    "keywords": {
+     "previo": "",
+     "nuevo": null,
+     "accion": "error_modelo",
+     "error": "No se pudo consultar Ollama (llama3.2:3b): HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)",
+     "origen": "modelo",
+     "modelo": "llama3.2:3b"
+    },
+    "og_title": {
+     "previo": "[current-page:title]",
+     "nuevo": "[current-page:title]",
+     "accion": "sin_cambios"
+    },
+    "og_description": {
+     "previo": "[current-page:metatag:description:value]",
+     "nuevo": "[current-page:metatag:description:value]",
+     "accion": "sin_cambios"
+    },
+    "canonical_url": {
+     "previo": "[node:url]",
+     "nuevo": "[node:url]",
+     "accion": "sin_cambios"
+    },
+    "robots_index": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "robots_follow": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "og_image": {
+     "previo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "nuevo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "accion": "sin_cambios"
+    },
+    "og_locale": {
+     "previo": "",
+     "nuevo": "es_CO",
+     "accion": "pendiente_dry_run",
+     "origen": "predeterminado"
+    }
+   },
+   "marcas": [
+    "sin_selector_schema_name",
+    "sin_selector_schema_description",
+    "sin_selector_og_type",
+    "sin_selector_og_image_height",
+    "sin_selector_schema_type",
+    "error_modelo",
+    "cambio_automatico"
+   ],
+   "revisado_en": "2026-11-07T11:56:51",
+   "cambios_automaticos": [
+    "og_locale"
+   ],
+   "og_image": {
+    "url": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+    "status": 200,
+    "ok": true
+   },
+   "node_edit": "/node/42651/edit?destination=/node/42651",
+   "revision_contenido": {
+    "h1_count": 1,
+    "h1": "​​​Cómo dona​​r​​​​​",
+    "primer_parrafo": "En Filantropía EAFIT contamos con diferentes canales para facilitar ​el proceso de don​​ación.​",
+    "imagenes_sin_alt": 0,
+    "instrucciones_pdf": [
+     {
+      "campo": "h1",
+      "instruccion": "Debe existir un único H1 con el nombre completo, no solo la sigla."
+     },
+     {
+      "campo": "primer_parrafo",
+      "instruccion": "Las primeras tres líneas visibles deben explicar qué hace el centro, sus líneas de énfasis y cómo contactarlo."
+     },
+     {
+      "campo": "alt_imagenes",
+      "instruccion": "Revisar que todas las imágenes de la página tengan texto alternativo."
+     }
+    ]
+   },
+   "estado": "error_modelo",
+   "modelo_ia": "llama3.2:3b",
+   "error_modelo": "No se pudo consultar Ollama (llama3.2:3b): HTTPConnectionPool(host='127.0.0.1', port=11434): Read timed out. (read timeout=180)"
+  },
+  "https://www.eafit.edu.co/centros-estudio-incidencia": {
+   "title": "​​​​​​​​​​Centros de Estudio ​e Incidencia - Universidad EAFIT",
+   "depth": 0,
+   "status": 200,
+   "campos": {
+    "page_title": {
+     "previo": "[node:title] - [site:name]",
+     "nuevo": "[node:title] - [site:name]",
+     "accion": "sin_cambios"
+    },
+    "description": {
+     "previo": "Los centros de estudio e incidencia de EAFIT impulsan la gestión del conocimiento, creando vínculos entre la Universidad y la sociedad para generar impacto y transformación.",
+     "nuevo": "Los centros de estudio e incidencia de EAFIT impulsan la gestión del conocimiento, creando vínculos entre la Universidad y la sociedad para generar impacto y transformación.",
+     "accion": "sin_cambios"
+    },
+    "abstract": {
+     "previo": "Los centros de estudio e incidencia de EAFIT impulsan la gestión del conocimiento, creando vínculos entre la Universidad y la sociedad para generar impacto y transformación.",
+     "nuevo": "Los centros de estudio e incidencia de EAFIT impulsan la gestión del conocimiento, creando vínculos entre la Universidad y la sociedad para generar impacto y transformación.",
+     "accion": "sin_cambios"
+    },
+    "keywords": {
+     "previo": "",
+     "nuevo": "entidad matriz, nombre de la página/unidad + EAFIT, entidad + ciudad y país, subtemas o trámites + EAFIT, conceptos diferenciadores y alcance/sedes.",
+     "accion": "pendiente_dry_run",
+     "origen": "modelo",
+     "modelo": "llama3.2:3b"
+    },
+    "og_title": {
+     "previo": "[current-page:title]",
+     "nuevo": "[current-page:title]",
+     "accion": "sin_cambios"
+    },
+    "og_description": {
+     "previo": "[current-page:metatag:description:value]",
+     "nuevo": "[current-page:metatag:description:value]",
+     "accion": "sin_cambios"
+    },
+    "canonical_url": {
+     "previo": "https://www.eafit.edu.co/centros-estudio-incidencia",
+     "nuevo": "https://www.eafit.edu.co/centros-estudio-incidencia",
+     "accion": "sin_cambios"
+    },
+    "robots_index": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "robots_follow": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "og_image": {
+     "previo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "nuevo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "accion": "sin_cambios"
+    },
+    "og_locale": {
+     "previo": "",
+     "nuevo": "es_CO",
+     "accion": "pendiente_dry_run",
+     "origen": "predeterminado"
+    }
+   },
+   "marcas": [
+    "sin_selector_schema_name",
+    "sin_selector_schema_description",
+    "sin_selector_og_type",
+    "sin_selector_og_image_height",
+    "sin_selector_schema_type",
+    "cambio_automatico"
+   ],
+   "revisado_en": "2026-11-07T11:42:48",
+   "cambios_automaticos": [
+    "keywords",
+    "og_locale"
+   ],
+   "og_image": {
+    "url": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+    "status": 200,
+    "ok": true
+   },
+   "node_edit": "/node/16476/edit?destination=/node/16476",
+   "revision_contenido": {
+    "h1_count": 1,
+    "h1": "​​​​​​​​​​Centros de Estudio ​e Incidencia",
+    "primer_parrafo": "Nuestras capacidades de conocimiento al servicio de las organizaciones y la sociedad.",
+    "imagenes_sin_alt": 0,
+    "instrucciones_pdf": [
+     {
+      "campo": "h1",
+      "instruccion": "Debe existir un único H1 con el nombre completo, no solo la sigla."
+     },
+     {
+      "campo": "primer_parrafo",
+      "instruccion": "Las primeras tres líneas visibles deben explicar qué hace el centro, sus líneas de énfasis y cómo contactarlo."
+     },
+     {
+      "campo": "alt_imagenes",
+      "instruccion": "Revisar que todas las imágenes de la página tengan texto alternativo."
+     }
+    ]
+   },
+   "estado": "dry_run_automatico_con_marcas",
+   "modelo_ia": "llama3.2:3b"
+  },
+  "https://www.eafit.edu.co/participa": {
+   "title": "Participa - Universidad EAFIT",
+   "depth": 1,
+   "status": 200,
+   "campos": {
+    "page_title": {
+     "previo": "[node:title] - [site:name]",
+     "nuevo": "[node:title] - [site:name]",
+     "accion": "sin_cambios"
+    },
+    "description": {
+     "previo": "[node:summary]",
+     "nuevo": "[node:summary]",
+     "accion": "sin_cambios"
+    },
+    "abstract": {
+     "previo": "",
+     "nuevo": null,
+     "accion": "error_modelo",
+     "error": "tiene 291 caracteres; el máximo es 159",
+     "origen": "modelo",
+     "modelo": "llama3.2:3b"
+    },
+    "keywords": {
+     "previo": "",
+     "nuevo": "Universidad EAFIT, educación superior, innovación, desarrollo, ingeniería, salud, economía, educación de alta calidad, capacitación, innovación y desarrollo en la región.",
+     "accion": "pendiente_dry_run",
+     "origen": "modelo",
+     "modelo": "llama3.2:3b"
+    },
+    "og_title": {
+     "previo": "[current-page:title]",
+     "nuevo": "[current-page:title]",
+     "accion": "sin_cambios"
+    },
+    "og_description": {
+     "previo": "[current-page:metatag:description:value]",
+     "nuevo": "[current-page:metatag:description:value]",
+     "accion": "sin_cambios"
+    },
+    "canonical_url": {
+     "previo": "[node:url]",
+     "nuevo": "[node:url]",
+     "accion": "sin_cambios"
+    },
+    "robots_index": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "robots_follow": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "og_image": {
+     "previo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "nuevo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "accion": "sin_cambios"
+    },
+    "og_locale": {
+     "previo": "",
+     "nuevo": "es_CO",
+     "accion": "pendiente_dry_run",
+     "origen": "predeterminado"
+    }
+   },
+   "marcas": [
+    "primer_parrafo_ausente",
+    "sin_selector_schema_name",
+    "sin_selector_schema_description",
+    "sin_selector_og_type",
+    "sin_selector_og_image_height",
+    "sin_selector_schema_type",
+    "error_modelo",
+    "cambio_automatico"
+   ],
+   "revisado_en": "2026-11-07T11:42:57",
+   "cambios_automaticos": [
+    "keywords",
+    "og_locale"
+   ],
+   "og_image": {
+    "url": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+    "status": 200,
+    "ok": true
+   },
+   "node_edit": "/node/45936/edit?destination=/node/45936",
+   "revision_contenido": {
+    "h1_count": 1,
+    "h1": "Participa",
+    "primer_parrafo": "",
+    "imagenes_sin_alt": 0,
+    "instrucciones_pdf": [
+     {
+      "campo": "h1",
+      "instruccion": "Debe existir un único H1 con el nombre completo, no solo la sigla."
+     },
+     {
+      "campo": "primer_parrafo",
+      "instruccion": "Las primeras tres líneas visibles deben explicar qué hace el centro, sus líneas de énfasis y cómo contactarlo."
+     },
+     {
+      "campo": "alt_imagenes",
+      "instruccion": "Revisar que todas las imágenes de la página tengan texto alternativo."
+     }
+    ]
+   },
+   "error_modelo": "abstract: tiene 291 caracteres; el máximo es 159",
+   "estado": "error_modelo",
+   "modelo_ia": "llama3.2:3b"
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion": {
+   "title": "Innovación y Transferencia Tecnológica EAFIT - Universidad EAFIT",
+   "depth": 1,
+   "status": 200,
+   "campos": {
+    "page_title": {
+     "previo": "[node:title] - [site:name]",
+     "nuevo": "[node:title] - [site:name]",
+     "accion": "sin_cambios"
+    },
+    "description": {
+     "previo": "Somos la plataforma que conecta el conocimiento de EAFIT con las necesidades de las organizaciones, las industrias y la sociedad",
+     "nuevo": "Somos la plataforma que conecta el conocimiento de EAFIT con las necesidades de las organizaciones, las industrias y la sociedad",
+     "accion": "sin_cambios"
+    },
+    "abstract": {
+     "previo": "Descubre la Unidad de proyectos CTeI de la Universidad EAFIT. Impulsamos la innovación, el desarrollo tecnológico y la transferencia de conocimiento conectando la academia con organizaciones en sectores como Agrotech, Healthtech e Industria.",
+     "nuevo": "Descubre la Unidad de proyectos CTeI de la Universidad EAFIT. Impulsamos la innovación, el desarrollo tecnológico y la transferencia de conocimiento conectando la academia con organizaciones en sectores como Agrotech, Healthtech e Industria.",
+     "accion": "sin_cambios"
+    },
+    "keywords": {
+     "previo": "proyectos CTeI, Universidad EAFIT, innovación tecnológica, desarrollo tecnológico, transferencia de tecnología, servicios para organizaciones, portafolio de tecnologías, Agrotech, Healthtech, industria y manufactura, convocatorias de investigación, vinculación universidad empresa, patentes y tecnologías, ciencia y tecnología, innovación en Medellín.",
+     "nuevo": "proyectos CTeI, Universidad EAFIT, innovación tecnológica, desarrollo tecnológico, transferencia de tecnología, servicios para organizaciones, portafolio de tecnologías, Agrotech, Healthtech, industria y manufactura, convocatorias de investigación, vinculación universidad empresa, patentes y tecnologías, ciencia y tecnología, innovación en Medellín.",
+     "accion": "sin_cambios"
+    },
+    "og_title": {
+     "previo": "[current-page:title]",
+     "nuevo": "[current-page:title]",
+     "accion": "sin_cambios"
+    },
+    "og_description": {
+     "previo": "[current-page:metatag:description:value]",
+     "nuevo": "[current-page:metatag:description:value]",
+     "accion": "sin_cambios"
+    },
+    "canonical_url": {
+     "previo": "[node:url]",
+     "nuevo": "[node:url]",
+     "accion": "sin_cambios"
+    },
+    "robots_index": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "robots_follow": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "og_image": {
+     "previo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "nuevo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "accion": "sin_cambios"
+    },
+    "og_locale": {
+     "previo": "",
+     "nuevo": "es_CO",
+     "accion": "pendiente_dry_run",
+     "origen": "predeterminado"
+    }
+   },
+   "marcas": [
+    "h1_no_unico",
+    "imagenes_sin_alt",
+    "sin_selector_schema_name",
+    "sin_selector_schema_description",
+    "sin_selector_og_type",
+    "sin_selector_og_image_height",
+    "sin_selector_schema_type",
+    "cambio_automatico"
+   ],
+   "revisado_en": "2026-11-07T11:43:13",
+   "cambios_automaticos": [
+    "og_locale"
+   ],
+   "og_image": {
+    "url": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+    "status": 200,
+    "ok": true
+   },
+   "node_edit": "/node/31081/edit?destination=/node/31081",
+   "revision_contenido": {
+    "h1_count": 3,
+    "h1": "Innovación y Transferencia Tecnológica",
+    "primer_parrafo": "Conectamos el conocimiento y las capacidades en Ciencia, Tecnología e Innovación de EAFIT con las necesidades de los sistemas públicos, las organizaciones, las industrias y la sociedad.",
+    "imagenes_sin_alt": 1,
+    "instrucciones_pdf": [
+     {
+      "campo": "h1",
+      "instruccion": "Debe existir un único H1 con el nombre completo, no solo la sigla."
+     },
+     {
+      "campo": "primer_parrafo",
+      "instruccion": "Las primeras tres líneas visibles deben explicar qué hace el centro, sus líneas de énfasis y cómo contactarlo."
+     },
+     {
+      "campo": "alt_imagenes",
+      "instruccion": "Revisar que todas las imágenes de la página tengan texto alternativo."
+     }
+    ]
+   },
+   "estado": "dry_run_automatico_con_marcas"
+  },
+  "https://www.eafit.edu.co/pregrados": {
+   "title": "Pregrados - Universidad EAFIT",
+   "depth": 1,
+   "status": 200,
+   "campos": {},
+   "marcas": [
+    "primer_parrafo_ausente",
+    "sin_acceso"
+   ],
+   "revisado_en": "2026-11-07T11:43:20",
+   "revision_contenido": {
+    "h1_count": 1,
+    "h1": "Inscripciones abiertas Pregrado 2027-1",
+    "primer_parrafo": "",
+    "imagenes_sin_alt": 0,
+    "instrucciones_pdf": [
+     {
+      "campo": "h1",
+      "instruccion": "Debe existir un único H1 con el nombre completo, no solo la sigla."
+     },
+     {
+      "campo": "primer_parrafo",
+      "instruccion": "Las primeras tres líneas visibles deben explicar qué hace el centro, sus líneas de énfasis y cómo contactarlo."
+     },
+     {
+      "campo": "alt_imagenes",
+      "instruccion": "Revisar que todas las imágenes de la página tengan texto alternativo."
+     }
+    ]
+   },
+   "estado": "dry_run_automatico_con_marcas"
+  },
+  "https://www.eafit.edu.co/organizaciones/talento-eafit/estudiantes/practicas-estudiantiles/organizaciones": {
+   "title": "Organizaciones - Universidad EAFIT",
+   "depth": 1,
+   "status": 200,
+   "campos": {
+    "page_title": {
+     "previo": "[node:title] - [site:name]",
+     "nuevo": "[node:title] - [site:name]",
+     "accion": "sin_cambios"
+    },
+    "description": {
+     "previo": "Descubre las oportunidades de prácticas estudiantiles en organizaciones a través del programa Talento EAFIT y potencia tu desarrollo profesional",
+     "nuevo": "Descubre las oportunidades de prácticas estudiantiles en organizaciones a través del programa Talento EAFIT y potencia tu desarrollo profesional",
+     "accion": "sin_cambios"
+    },
+    "abstract": {
+     "previo": "",
+     "nuevo": "Descubre las oportunidades de prácticas estudiantiles en organizaciones a través del programa Talento EAFIT y potencia tu desarrollo profesional",
+     "accion": "pendiente_dry_run",
+     "origen": "modelo",
+     "modelo": "llama3.2:3b"
+    },
+    "keywords": {
+     "previo": "",
+     "nuevo": "Talento EAFIT, prácticas estudiantiles, desarrollo profesional, organizaciones, EAFIT, pasantía, formación especializada",
+     "accion": "pendiente_dry_run",
+     "origen": "modelo",
+     "modelo": "llama3.2:3b"
+    },
+    "og_title": {
+     "previo": "[current-page:title]",
+     "nuevo": "[current-page:title]",
+     "accion": "sin_cambios"
+    },
+    "og_description": {
+     "previo": "[current-page:metatag:description:value]",
+     "nuevo": "[current-page:metatag:description:value]",
+     "accion": "sin_cambios"
+    },
+    "canonical_url": {
+     "previo": "[node:url]",
+     "nuevo": "[node:url]",
+     "accion": "sin_cambios"
+    },
+    "robots_index": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "robots_follow": {
+     "previo": true,
+     "nuevo": true,
+     "accion": "sin_cambios"
+    },
+    "og_image": {
+     "previo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "nuevo": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+     "accion": "sin_cambios"
+    },
+    "og_locale": {
+     "previo": "",
+     "nuevo": "es_CO",
+     "accion": "pendiente_dry_run",
+     "origen": "predeterminado"
+    }
+   },
+   "marcas": [
+    "sin_selector_schema_name",
+    "sin_selector_schema_description",
+    "sin_selector_og_type",
+    "sin_selector_og_image_height",
+    "sin_selector_schema_type",
+    "cambio_automatico"
+   ],
+   "revisado_en": "2026-11-07T11:43:49",
+   "node_edit": "/node/30331/edit?destination=/node/30331",
+   "cambios_automaticos": [
+    "abstract",
+    "keywords",
+    "og_locale"
+   ],
+   "og_image": {
+    "url": "https://universidadeafit.widen.net/s/zb9rhnkcbt/logo-eafit-negro",
+    "status": 200,
+    "ok": true
+   },
+   "revision_contenido": {
+    "h1_count": 1,
+    "h1": "Organizaciones",
+    "primer_parrafo": "En EAFIT también tenemos alternativas para tu empresa. Si requieres estudiantes en pasantía, practicantes y profesionales graduados, te apoyamos en su consecución. Adicionalmente, te ofrecemos acompañamiento para fortalecer tu negocio a través de redes de trabajo, eventos y actividades de formación especializada.",
+    "imagenes_sin_alt": 0,
+    "instrucciones_pdf": [
+     {
+      "campo": "h1",
+      "instruccion": "Debe existir un único H1 con el nombre completo, no solo la sigla."
+     },
+     {
+      "campo": "primer_parrafo",
+      "instruccion": "Las primeras tres líneas visibles deben explicar qué hace el centro, sus líneas de énfasis y cómo contactarlo."
+     },
+     {
+      "campo": "alt_imagenes",
+      "instruccion": "Revisar que todas las imágenes de la página tengan texto alternativo."
+     }
+    ]
+   },
+   "error_modelo": "abstract: tiene 197 caracteres; el máximo es 159",
+   "estado": "dry_run_automatico_con_marcas",
+   "modelo_ia": "llama3.2:3b"
+  },
+  "https://www.eafit.edu.co/calendario-eventos": {
+   "title": "Calendario eventos - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/transparencia-y-acceso-la-informacion-publica": {
+   "title": "Transparencia y acceso a la información pública - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/trabaja-con-nosotros": {
+   "title": "Trabaje con nosotros",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/ongoing/membresia": {
+   "title": "Membresía - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/posgrados": {
+   "title": "Posgrados - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/pqrsf": {
+   "title": "PQRSF - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/centros-estudio-incidencia/urbam": {
+   "title": "Urbam - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/bienestar-universitario/deportes": {
+   "title": "Deportes - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/transferencia-tecnologia-y-conocimiento": {
+   "title": "Transferencia de Tecnología y Conocimiento - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/organizaciones/conexion-asuntos-publicos": {
+   "title": "Conexión con los asuntos públicos - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/institucional/reglamentos/reglamentos": {
+   "title": "Estatutos, reglamentos​, políticas y protocolos",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/profes-que-inspiran": {
+   "title": "Profes que inspiran",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/constitucion": {
+   "title": "Constitución - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/reserva-espacios": {
+   "title": "Reserva de espacios de aprendizaje - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/universidad-ninos": {
+   "title": "Universidad de los Niños EAFIT - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/cultura-ciencia-tecnologia-innovacion": {
+   "title": "Cultura CTeI - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/vida-cultural": {
+   "title": "Cultura - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/": {
+   "title": "¡Te damos la bienvenida a la Universidad EAFIT! - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/filantropia": {
+   "title": "Filantropía",
+   "depth": 0,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico": {
+   "title": "Innovación y Transferencia Tecnológica EAFIT - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/ciencia-tecnologia-innovacion": {
+   "title": "Sistema Ciencia, Tecnología e Innovación - Universidad EAFIT",
+   "depth": 0,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/bienestar-universitario/genero-diversidad-e-inclusion": {
+   "title": "Género, diversidad ​e inclusión",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/taxonomy/term/1846": {
+   "title": "Institucional | Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/practicas-en-el-exterior": {
+   "title": "Prácticas en el ​​exterior - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/descubre-y-crea/edicion-180": {
+   "title": "Edición 180 - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/bienestar-universitario/convenios/graduados": {
+   "title": "Convenios graduados - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/graduados/tarjeta-profesional": {
+   "title": "Tarjeta profesional​​​ - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/filantropia/iniciativas/giving-day": {
+   "title": "Giving Day",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/noticias/eafit-es-noticia": {
+   "title": "EAFIT es noticia - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/nuestras-escuelas": {
+   "title": "Nuestras escuelas - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/noticias": {
+   "title": "Noticias - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/investigacion/convocatorias/convocatoria-proyectos-internos": {
+   "title": "Convocatoria proyectos internos - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/descubre-y-crea": {
+   "title": "Descubre y Crea - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/investigacion": {
+   "title": "Investigación - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/organizaciones/talento-eafit/graduados": {
+   "title": "Graduados - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/servicios-en-linea": {
+   "title": "Servicios en línea - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/interactiva": {
+   "title": "Interactiva - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/formacionctei": {
+   "title": "Formación en Ciencia, Tecnología e Innovación - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/internacionalizacion/convenios": {
+   "title": "Convenios Internacionales - EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/eafit-llanogrande": {
+   "title": "EAFIT Llanogrande - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/taxonomy/term/1836": {
+   "title": "Educación y futuro | Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/nodo": {
+   "title": "Nodo - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/noticias/eafit-es-noticia/la-vigencia-del-profesor-y-su-papel-en-tiempos-de-incertidumbre-y": {
+   "title": "La vigencia del profesor y su papel en tiempos de incertidumbre y transformación - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/internacionalizacion/misiones-en-eafit-programas-cortos-de-intercambio": {
+   "title": "Programas cortos de intercambio - EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/centro-visitantes": {
+   "title": "Centro de visitantes - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/atencion-y-servicios-la-ciudadania": {
+   "title": "Atención y servicios a la ciudadanía - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/filantropia/noticias": {
+   "title": "Noticias",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/centros-estudio-incidencia/imaginar-futuros": {
+   "title": "Imaginar Futuros - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/graduados": {
+   "title": "Graduados EAFIT - Universidad EAFIT",
+   "depth": 0,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/institucional/acreditacion": {
+   "title": "Acreditación Institucional de Alta Calidad | EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/centro-de-artes": {
+   "title": "Centro de Artes - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/universidad-ninos/red-preguntas": {
+   "title": "Red de preguntas",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/organizaciones/talento-eafit/ceiba": {
+   "title": "Ceiba - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/eafit-pereira": {
+   "title": "EAFIT Pereira - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/otros-programas/eventos": {
+   "title": "Eventos - EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/Portafolio-capacidades": {
+   "title": "Portafolio servicios innovación - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/ongoing/bootcamps": {
+   "title": "Bootcamps - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/orquesta-sinfonica-eafit": {
+   "title": "Orquesta Sinfónica EAFIT - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/propiedad-intelectual": {
+   "title": "Propiedad intelectual - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/internacionalizacion/intercambio-en-el-exterior": {
+   "title": "Intercambio en el exterior - EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/filantropia/iniciativas": {
+   "title": "Iniciativas",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/servicios/acentos/libreria-acentos": {
+   "title": "Librería Acentos",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/ciencia-tecnologia-innovacion/investigacion": {
+   "title": "Investigación - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/descubre-y-crea/edicion-177": {
+   "title": "Edición 177 - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/idiomas": {
+   "title": "Idiomas - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/bienestar-universitario/salud-mental": {
+   "title": "¡Cuidémonos! - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas/patrimonio-y-cultura": {
+   "title": "Patrimonio y Cultura",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/ongoing/incubadora-de-ideas": {
+   "title": "Incubadora de ideas - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/ongoing": {
+   "title": "Ongoing - Universidad EAFIT",
+   "depth": 0,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sigamos-en-contacto": {
+   "title": "Sigamos en contacto: Canales de Comunicación EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/organizaciones/empresas": {
+   "title": "Empresas - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/nuestras-sedes": {
+   "title": "Nuestras sedes",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/proyectos-consultorias-para-organizaciones-sistemas-publicos": {
+   "title": "Portafolio servicios innovación - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/becas-y-financiacion": {
+   "title": "Becas y financiación - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/filantropia/informes-de-gestion": {
+   "title": "Informes de gestión",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/conexion-asuntos-publicos": {
+   "title": "Conexión con los asuntos públicos - Universidad EAFIT",
+   "depth": 0,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/universidad-parque": {
+   "title": "Universidad Parque - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/investigacion/nuestros-semilleros": {
+   "title": "Nuestros Semilleros - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/en/organizaciones/talento-eafit": {
+   "title": "EAFIT talent - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sostenibilidad": {
+   "title": "Sostenibilidad - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas": {
+   "title": "Centro Cultural Biblioteca Luis Echavarría Villegas - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/noticias/lo-que-esta-pasando/fondo-futuro-abre-300-nuevos-cupos-para-facilitar-el-acceso-la": {
+   "title": "https://www.eafit.edu.co/noticias/lo-que-esta-pasando/fondo-futuro-abre-300-nuevos-cupos-para-facilitar-el-acceso-la",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/proyectos-ctei": {
+   "title": "Proyectos CTeI - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/notificaciones-judiciales-y-certificados": {
+   "title": "Notificaciones judiciales y certificados - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/terminos-condiciones": {
+   "title": "Términos de uso - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/empresas": {
+   "title": "Empresas - Universidad EAFIT",
+   "depth": 0,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/bienestar-universitario/desarrollo-estudiantil": {
+   "title": "Desarrollo Estudiantil - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/campus-eafit": {
+   "title": "Campus EAFIT​​​",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/descubre-y-crea/edicion-181": {
+   "title": "Edición 181 - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/organizaciones/talento-eafit": {
+   "title": "Talento EAFIT - Universidad EAFIT",
+   "depth": 0,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/filantropia/preguntas-frecuentes": {
+   "title": "Preguntas frecuentes",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/noticias/sala-de-prensa": {
+   "title": "Sala de prensa - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/otros-programas": {
+   "title": "Otros Programas - EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/bienestar-universitario": {
+   "title": "Bienestar Universitario - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/institucional/comunicados-institucionales/comunicados-2026": {
+   "title": "Comunicados",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/extension-cultural": {
+   "title": "Extensión Cultural - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/centro-de-ayuda": {
+   "title": "Centro de ayuda - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/en/ciencia-tecnologia-innovacion": {
+   "title": "Science, Technology and Innovation System - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/ongoing/cowork-landing-empresarial": {
+   "title": "Cowork & Landing empresarial - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/descubre-y-crea/edicion-178": {
+   "title": "Edición 178 - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/talento-eafit/reglamento-experiencias-talento": {
+   "title": "Reglamento de​ Experiencias de Talento​​ - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/centros-estudio-incidencia/valor-publico": {
+   "title": "Valor Público - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/noticias/eafit-es-noticia-nuestra-comunidad-de-talento/celebramos-el-poder-de-la-inspiracion-estos": {
+   "title": "Celebramos el poder de la inspiración ¡Estos son los ganadores de la cuarta edición de los Premios Inspiradores EAFIT! - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/organizaciones/talento-eafit/estudiantes": {
+   "title": "Estudiantes - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/descubre-y-crea/edicion-175": {
+   "title": "Edición 175 - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/eafit-bogota": {
+   "title": "EAFIT Bogotá - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/politica-de-tratamiento-y-proteccion-de-datos-personales": {
+   "title": "Política de tratamiento y protección de datos personales - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/mapa-del-sitio": {
+   "title": "Mapa del sitio - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/institucional/pei": {
+   "title": "PEI - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/editorial": {
+   "title": "Editorial",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/centros-estudio-incidencia/energy-valley": {
+   "title": "Energy Valley - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/en/graduados": {
+   "title": "Eafit graduates - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/internacionalizacion/aprendizaje-global": {
+   "title": "Aprendizaje Global - EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/descubre-y-crea/edicion-179": {
+   "title": "Edición 179 - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/biblioteca": {
+   "title": "Centro Cultural Biblioteca Luis Echavarría Villegas - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/en/organizaciones/conexion-asuntos-publicos": {
+   "title": "Connection with public affairs - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/filantropia/contacto": {
+   "title": "Contacto",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/formacion-ciencia-tecnologia-innovacion": {
+   "title": "Formación en Ciencia, Tecnología e Innovación - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/registro-academico": {
+   "title": "Registro académico - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/centros-estudio-incidencia/urbam/que-es-urbam": {
+   "title": "¿Qué es Urbam? - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/portafolio-tecnologias": {
+   "title": "Portafolio de tecnologías - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/internacionalizacion": {
+   "title": "Internacionalización - EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/linea-de-transparencia": {
+   "title": "Línea de transparencia - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/in-sight": {
+   "title": "Liderazgo de Impacto - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/tarifas": {
+   "title": "Tarifas - EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/internacionalizacion/intercambio-academico-nacional": {
+   "title": "Intercambio académico nacional - EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/epik": {
+   "title": "Bienvenido a EPIK - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/marco-normativo": {
+   "title": "Marco normativo - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/noticias/eafit-es-noticia/eafit-es-la-segunda-universidad-de-colombia-y-la-primera-de-antioquia-en": {
+   "title": "EAFIT es la segunda universidad de Colombia y la primera de Antioquia en Merco Talento 2026 - Universidad EAFIT",
+   "depth": 1,
+   "status": 200
+  },
+  "https://www.eafit.edu.co/organizaciones": {
+   "title": "Organizaciones - Universidad EAFIT",
+   "depth": 0,
+   "status": 200
+  }
+ },
+ "edges": [
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/atencion-y-servicios-la-ciudadania"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/becas-y-financiacion"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/bienestar-universitario"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/bienestar-universitario/deportes"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/bienestar-universitario/desarrollo-estudiantil"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/bienestar-universitario/genero-diversidad-e-inclusion"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/bienestar-universitario/salud-mental"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/calendario-eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/campus-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas/patrimonio-y-cultura"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/centro-de-artes"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/centro-de-ayuda"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/centro-visitantes"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/centros-estudio-incidencia/energy-valley"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/centros-estudio-incidencia/imaginar-futuros"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/centros-estudio-incidencia/urbam"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/centros-estudio-incidencia/valor-publico"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/conexion-asuntos-publicos"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/constitucion"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/eafit-bogota"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/eafit-llanogrande"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/eafit-pereira"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/editorial"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/empresas"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/epik"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/extension-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/filantropia"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/graduados"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/idiomas"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/in-sight"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/institucional"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/institucional/acreditacion"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/institucional/comunicados-institucionales/comunicados-2026"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/institucional/pei"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/institucional/reglamentos/reglamentos"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/interactiva"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/internacionalizacion"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/internacionalizacion/aprendizaje-global"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/internacionalizacion/convenios"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-academico-nacional"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/internacionalizacion/misiones-en-eafit-programas-cortos-de-intercambio"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/linea-de-transparencia"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/mapa-del-sitio"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/noticias"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/noticias/sala-de-prensa"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/notificaciones-judiciales-y-certificados"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/nuestras-escuelas"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/nuestras-sedes"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/ongoing"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/organizaciones"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/organizaciones/talento-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/orquesta-sinfonica-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/otros-programas"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/otros-programas/eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/participa"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/politica-de-tratamiento-y-proteccion-de-datos-personales"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/posgrados"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/pqrsf"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/practicas-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/pregrados"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/profes-que-inspiran"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/registro-academico"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/reserva-espacios"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/servicios-en-linea"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/servicios/acentos/libreria-acentos"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/sigamos-en-contacto"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/cultura-ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/formacionctei"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/proyectos-ctei"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/investigacion"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/universidad-ninos"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/sostenibilidad"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/tarifas"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/terminos-condiciones"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/trabaja-con-nosotros"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/transparencia-y-acceso-la-informacion-publica"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/universidad-parque"
+  ],
+  [
+   "https://www.eafit.edu.co/centros-estudio-incidencia",
+   "https://www.eafit.edu.co/vida-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/atencion-y-servicios-la-ciudadania"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/becas-y-financiacion"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/biblioteca"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/bienestar-universitario"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/bienestar-universitario/deportes"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/bienestar-universitario/desarrollo-estudiantil"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/bienestar-universitario/genero-diversidad-e-inclusion"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/bienestar-universitario/salud-mental"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/calendario-eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/campus-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas/patrimonio-y-cultura"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/centro-de-artes"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/centro-de-ayuda"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/centro-visitantes"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/centros-estudio-incidencia"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/centros-estudio-incidencia/urbam/que-es-urbam"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/centros-estudio-incidencia/valor-publico"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion/investigacion"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/conexion-asuntos-publicos"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/constitucion"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/eafit-bogota"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/eafit-llanogrande"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/eafit-pereira"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/editorial"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/empresas"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/en/ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/epik"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/extension-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/filantropia"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/graduados"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/idiomas"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/in-sight"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/institucional"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/institucional/acreditacion"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/institucional/comunicados-institucionales/comunicados-2026"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/institucional/pei"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/institucional/reglamentos/reglamentos"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/interactiva"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/internacionalizacion"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/internacionalizacion/aprendizaje-global"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/internacionalizacion/convenios"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-academico-nacional"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/internacionalizacion/misiones-en-eafit-programas-cortos-de-intercambio"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/linea-de-transparencia"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/mapa-del-sitio"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/noticias"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/noticias/sala-de-prensa"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/notificaciones-judiciales-y-certificados"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/nuestras-escuelas"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/nuestras-sedes"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/ongoing"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/organizaciones"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/organizaciones/talento-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/orquesta-sinfonica-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/otros-programas"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/otros-programas/eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/participa"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/politica-de-tratamiento-y-proteccion-de-datos-personales"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/posgrados"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/pqrsf"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/practicas-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/pregrados"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/profes-que-inspiran"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/registro-academico"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/reserva-espacios"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/servicios-en-linea"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/servicios/acentos/libreria-acentos"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sigamos-en-contacto"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/cultura-ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/descubre-y-crea"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/descubre-y-crea/edicion-175"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/descubre-y-crea/edicion-176"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/descubre-y-crea/edicion-177"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/descubre-y-crea/edicion-178"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/descubre-y-crea/edicion-179"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/descubre-y-crea/edicion-180"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/descubre-y-crea/edicion-181"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/formacion-ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/formacionctei"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/portafolio-tecnologias"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/propiedad-intelectual"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/proyectos-consultorias-para-organizaciones-sistemas-publicos"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/proyectos-ctei"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/investigacion"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/investigacion/convocatorias/convocatoria-proyectos-internos"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/marco-normativo"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/universidad-ninos"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/universidad-ninos/red-preguntas"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/sostenibilidad"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/tarifas"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/terminos-condiciones"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/trabaja-con-nosotros"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/transparencia-y-acceso-la-informacion-publica"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/universidad-parque"
+  ],
+  [
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion",
+   "https://www.eafit.edu.co/vida-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/atencion-y-servicios-la-ciudadania"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/becas-y-financiacion"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/bienestar-universitario"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/bienestar-universitario/deportes"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/bienestar-universitario/desarrollo-estudiantil"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/bienestar-universitario/genero-diversidad-e-inclusion"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/bienestar-universitario/salud-mental"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/calendario-eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/campus-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas/patrimonio-y-cultura"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/centro-de-artes"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/centro-de-ayuda"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/centro-visitantes"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/centros-estudio-incidencia"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/centros-estudio-incidencia/urbam/que-es-urbam"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/centros-estudio-incidencia/valor-publico"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/constitucion"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/eafit-bogota"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/eafit-global-leaders-y-eafit-global-thinkers"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/eafit-llanogrande"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/eafit-pereira"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/editorial"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/empresas"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/en/organizaciones/conexion-asuntos-publicos"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/epik"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/extension-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/filantropia"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/graduados"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/idiomas"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/in-sight"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/institucional"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/institucional/acreditacion"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/institucional/comunicados-institucionales/comunicados-2026"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/institucional/pei"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/institucional/reglamentos/reglamentos"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/interactiva"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/internacionalizacion"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/internacionalizacion/aprendizaje-global"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/internacionalizacion/convenios"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-academico-nacional"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/internacionalizacion/misiones-en-eafit-programas-cortos-de-intercambio"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/linea-de-transparencia"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/mapa-del-sitio"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/noticias"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/noticias/sala-de-prensa"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/notificaciones-judiciales-y-certificados"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/nuestras-escuelas"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/nuestras-sedes"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/ongoing"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/organizaciones"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/organizaciones/conexion-asuntos-publicos"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/organizaciones/talento-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/orquesta-sinfonica-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/otros-programas"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/otros-programas/eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/participa"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/politica-de-tratamiento-y-proteccion-de-datos-personales"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/posgrados"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/pqrsf"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/practicas-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/pregrados"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/profes-que-inspiran"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/registro-academico"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/reserva-espacios"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/servicios-en-linea"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/servicios/acentos/libreria-acentos"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/sigamos-en-contacto"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/cultura-ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/formacionctei"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/proyectos-ctei"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/investigacion"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/universidad-ninos"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/sostenibilidad"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/tarifas"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/terminos-condiciones"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/trabaja-con-nosotros"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/transparencia-y-acceso-la-informacion-publica"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/universidad-parque"
+  ],
+  [
+   "https://www.eafit.edu.co/conexion-asuntos-publicos",
+   "https://www.eafit.edu.co/vida-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/atencion-y-servicios-la-ciudadania"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/becas-y-financiacion"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/bienestar-universitario"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/bienestar-universitario/deportes"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/bienestar-universitario/desarrollo-estudiantil"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/bienestar-universitario/genero-diversidad-e-inclusion"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/bienestar-universitario/salud-mental"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/calendario-eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/campus-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas/patrimonio-y-cultura"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/centro-de-artes"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/centro-de-ayuda"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/centro-visitantes"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/centros-estudio-incidencia"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/conexion-asuntos-publicos"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/constitucion"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/eafit-bogota"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/eafit-llanogrande"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/eafit-pereira"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/editorial"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/epik"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/extension-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/filantropia"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/graduados"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/idiomas"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/in-sight"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/institucional"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/institucional/acreditacion"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/institucional/comunicados-institucionales/comunicados-2026"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/institucional/pei"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/institucional/reglamentos/reglamentos"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/interactiva"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/internacionalizacion"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/internacionalizacion/aprendizaje-global"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/internacionalizacion/convenios"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-academico-nacional"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/internacionalizacion/misiones-en-eafit-programas-cortos-de-intercambio"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/linea-de-transparencia"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/mapa-del-sitio"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/noticias"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/noticias/sala-de-prensa"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/notificaciones-judiciales-y-certificados"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/nuestras-escuelas"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/nuestras-sedes"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/ongoing"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/organizaciones"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/organizaciones/talento-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/orquesta-sinfonica-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/otros-programas"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/otros-programas/eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/participa"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/politica-de-tratamiento-y-proteccion-de-datos-personales"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/posgrados"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/pqrsf"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/practicas-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/pregrados"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/profes-que-inspiran"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/registro-academico"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/reserva-espacios"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/servicios-en-linea"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/servicios/acentos/libreria-acentos"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/sigamos-en-contacto"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/cultura-ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/formacionctei"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/Portafolio-capacidades"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/proyectos-ctei"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/transferencia-tecnologia-y-conocimiento"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/investigacion"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/universidad-ninos"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/sostenibilidad"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/tarifas"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/terminos-condiciones"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/trabaja-con-nosotros"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/transparencia-y-acceso-la-informacion-publica"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/universidad-parque"
+  ],
+  [
+   "https://www.eafit.edu.co/empresas",
+   "https://www.eafit.edu.co/vida-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/atencion-y-servicios-la-ciudadania"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/becas-y-financiacion"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/bienestar-universitario"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/bienestar-universitario/deportes"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/bienestar-universitario/desarrollo-estudiantil"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/bienestar-universitario/genero-diversidad-e-inclusion"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/bienestar-universitario/salud-mental"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/calendario-eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/campus-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas/patrimonio-y-cultura"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/centro-de-artes"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/centro-de-ayuda"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/centro-visitantes"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/centros-estudio-incidencia"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/conexion-asuntos-publicos"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/constitucion"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/eafit-bogota"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/eafit-llanogrande"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/eafit-pereira"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/editorial"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/empresas"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/epik"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/extension-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/filantropia/como-donar"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/filantropia/contacto"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/filantropia/informes-de-gestion"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/filantropia/iniciativas"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/filantropia/iniciativas/giving-day"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/filantropia/noticias"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/filantropia/preguntas-frecuentes"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/graduados"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/idiomas"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/institucional"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/institucional/acreditacion"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/institucional/comunicados-institucionales/comunicados-2026"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/institucional/pei"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/institucional/reglamentos/reglamentos"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/interactiva"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/internacionalizacion"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/internacionalizacion/aprendizaje-global"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/internacionalizacion/convenios"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-academico-nacional"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/internacionalizacion/misiones-en-eafit-programas-cortos-de-intercambio"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/linea-de-transparencia"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/mapa-del-sitio"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/noticias"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/noticias/sala-de-prensa"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/notificaciones-judiciales-y-certificados"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/nuestras-escuelas"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/nuestras-sedes"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/ongoing"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/organizaciones"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/organizaciones/talento-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/orquesta-sinfonica-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/otros-programas"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/otros-programas/eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/participa"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/politica-de-tratamiento-y-proteccion-de-datos-personales"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/posgrados"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/pqrsf"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/practicas-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/pregrados"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/profes-que-inspiran"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/registro-academico"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/reserva-espacios"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/servicios-en-linea"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/servicios/acentos/libreria-acentos"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/sigamos-en-contacto"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/cultura-ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/formacionctei"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/proyectos-ctei"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/investigacion"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/universidad-ninos"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/sostenibilidad"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/tarifas"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/terminos-condiciones"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/trabaja-con-nosotros"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/transparencia-y-acceso-la-informacion-publica"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/universidad-parque"
+  ],
+  [
+   "https://www.eafit.edu.co/filantropia",
+   "https://www.eafit.edu.co/vida-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/atencion-y-servicios-la-ciudadania"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/becas-y-financiacion"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/bienestar-universitario"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/bienestar-universitario/convenios/graduados"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/bienestar-universitario/deportes"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/bienestar-universitario/desarrollo-estudiantil"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/bienestar-universitario/genero-diversidad-e-inclusion"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/bienestar-universitario/salud-mental"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/calendario-eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/campus-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas/patrimonio-y-cultura"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/centro-de-artes"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/centro-de-ayuda"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/centro-visitantes"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/centros-estudio-incidencia"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/conexion-asuntos-publicos"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/constitucion"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/eafit-bogota"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/eafit-llanogrande"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/eafit-pereira"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/editorial"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/empresas"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/en/graduados"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/epik"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/extension-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/filantropia"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/graduados/tarjeta-profesional"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/idiomas"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/institucional"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/institucional/acreditacion"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/institucional/comunicados-institucionales/comunicados-2026"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/institucional/pei"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/institucional/reglamentos/reglamentos"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/interactiva"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/internacionalizacion"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/internacionalizacion/aprendizaje-global"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/internacionalizacion/convenios"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-academico-nacional"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/internacionalizacion/misiones-en-eafit-programas-cortos-de-intercambio"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/linea-de-transparencia"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/mapa-del-sitio"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/noticias"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/noticias/eafit-es-noticia"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/noticias/eafit-es-noticia-nuestra-comunidad-de-talento/celebramos-el-poder-de-la-inspiracion-estos"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/noticias/eafit-es-noticia/eafit-es-la-segunda-universidad-de-colombia-y-la-primera-de-antioquia-en"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/noticias/eafit-es-noticia/la-vigencia-del-profesor-y-su-papel-en-tiempos-de-incertidumbre-y"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/noticias/lo-que-esta-pasando/fondo-futuro-abre-300-nuevos-cupos-para-facilitar-el-acceso-la"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/noticias/sala-de-prensa"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/notificaciones-judiciales-y-certificados"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/nuestras-escuelas"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/nuestras-sedes"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/ongoing"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/organizaciones"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/organizaciones/talento-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/orquesta-sinfonica-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/otros-programas"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/otros-programas/eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/participa"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/politica-de-tratamiento-y-proteccion-de-datos-personales"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/posgrados"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/pqrsf"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/practicas-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/pregrados"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/profes-que-inspiran"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/registro-academico"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/reserva-espacios"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/servicios-en-linea"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/servicios/acentos/libreria-acentos"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/sigamos-en-contacto"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/cultura-ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/formacionctei"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/proyectos-ctei"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/investigacion"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/universidad-ninos"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/sostenibilidad"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/tarifas"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/taxonomy/term/1836"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/taxonomy/term/1846"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/terminos-condiciones"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/trabaja-con-nosotros"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/transparencia-y-acceso-la-informacion-publica"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/universidad-parque"
+  ],
+  [
+   "https://www.eafit.edu.co/graduados",
+   "https://www.eafit.edu.co/vida-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/atencion-y-servicios-la-ciudadania"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/becas-y-financiacion"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/bienestar-universitario"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/bienestar-universitario/deportes"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/bienestar-universitario/desarrollo-estudiantil"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/bienestar-universitario/genero-diversidad-e-inclusion"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/bienestar-universitario/salud-mental"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/calendario-eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/campus-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas/patrimonio-y-cultura"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/centro-de-artes"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/centro-de-ayuda"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/centro-visitantes"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/centros-estudio-incidencia"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/conexion-asuntos-publicos"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/constitucion"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/eafit-bogota"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/eafit-llanogrande"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/eafit-pereira"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/editorial"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/empresas"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/epik"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/extension-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/filantropia"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/graduados"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/idiomas"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/institucional"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/institucional/acreditacion"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/institucional/comunicados-institucionales/comunicados-2026"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/institucional/pei"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/institucional/reglamentos/reglamentos"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/interactiva"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/internacionalizacion"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/internacionalizacion/aprendizaje-global"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/internacionalizacion/convenios"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-academico-nacional"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/internacionalizacion/misiones-en-eafit-programas-cortos-de-intercambio"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/linea-de-transparencia"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/mapa-del-sitio"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/noticias"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/noticias/sala-de-prensa"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/notificaciones-judiciales-y-certificados"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/nuestras-escuelas"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/nuestras-sedes"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/ongoing/bootcamps"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/ongoing/cowork-landing-empresarial"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/ongoing/cursos-para-emprender"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/ongoing/incubadora-de-ideas"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/ongoing/membresia"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/organizaciones"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/organizaciones/talento-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/orquesta-sinfonica-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/otros-programas"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/otros-programas/eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/participa"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/politica-de-tratamiento-y-proteccion-de-datos-personales"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/posgrados"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/pqrsf"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/practicas-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/pregrados"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/profes-que-inspiran"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/registro-academico"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/reserva-espacios"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/servicios-en-linea"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/servicios/acentos/libreria-acentos"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/sigamos-en-contacto"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/cultura-ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/formacionctei"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/proyectos-ctei"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/investigacion"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/investigacion/nuestros-semilleros"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/universidad-ninos"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/sostenibilidad"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/tarifas"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/terminos-condiciones"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/trabaja-con-nosotros"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/transparencia-y-acceso-la-informacion-publica"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/universidad-parque"
+  ],
+  [
+   "https://www.eafit.edu.co/ongoing",
+   "https://www.eafit.edu.co/vida-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/atencion-y-servicios-la-ciudadania"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/becas-y-financiacion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/bienestar-universitario"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/bienestar-universitario/deportes"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/bienestar-universitario/desarrollo-estudiantil"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/bienestar-universitario/genero-diversidad-e-inclusion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/bienestar-universitario/salud-mental"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/calendario-eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/campus-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas/patrimonio-y-cultura"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/centro-de-artes"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/centro-de-ayuda"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/centro-visitantes"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/centros-estudio-incidencia"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/centros-estudio-incidencia/urbam"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/centros-estudio-incidencia/valor-publico"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/conexion-asuntos-publicos"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/constitucion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/eafit-bogota"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/eafit-llanogrande"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/eafit-pereira"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/editorial"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/empresas"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/epik"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/extension-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/filantropia"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/graduados"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/idiomas"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/in-sight"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/institucional"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/institucional/acreditacion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/institucional/comunicados-institucionales/comunicados-2026"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/institucional/pei"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/institucional/reglamentos/reglamentos"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/interactiva"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/internacionalizacion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/internacionalizacion/aprendizaje-global"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/internacionalizacion/convenios"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-academico-nacional"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/internacionalizacion/misiones-en-eafit-programas-cortos-de-intercambio"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/linea-de-transparencia"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/mapa-del-sitio"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/nodo"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/noticias"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/noticias/sala-de-prensa"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/notificaciones-judiciales-y-certificados"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/nuestras-escuelas"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/nuestras-sedes"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/ongoing"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/organizaciones/conexion-asuntos-publicos"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/organizaciones/empresas"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/organizaciones/talento-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/orquesta-sinfonica-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/otros-programas"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/otros-programas/eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/participa"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/politica-de-tratamiento-y-proteccion-de-datos-personales"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/posgrados"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/pqrsf"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/practicas-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/pregrados"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/profes-que-inspiran"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/registro-academico"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/reserva-espacios"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/servicios-en-linea"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/servicios/acentos/libreria-acentos"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/sigamos-en-contacto"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/cultura-ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/formacionctei"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/proyectos-ctei"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/investigacion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/universidad-ninos"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/sostenibilidad"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/tarifas"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/terminos-condiciones"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/trabaja-con-nosotros"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/transparencia-y-acceso-la-informacion-publica"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/universidad-parque"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones",
+   "https://www.eafit.edu.co/vida-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/atencion-y-servicios-la-ciudadania"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/becas-y-financiacion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/bienestar-universitario"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/bienestar-universitario/deportes"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/bienestar-universitario/desarrollo-estudiantil"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/bienestar-universitario/genero-diversidad-e-inclusion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/bienestar-universitario/salud-mental"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/calendario-eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/campus-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/centro-cultural-biblioteca-luis-echavarria-villegas/patrimonio-y-cultura"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/centro-de-artes"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/centro-de-ayuda"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/centro-visitantes"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/centros-estudio-incidencia"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/conexion-asuntos-publicos"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/constitucion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/eafit-bogota"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/eafit-llanogrande"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/eafit-pereira"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/editorial"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/empresas"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/en/organizaciones/talento-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/epik"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/extension-cultural"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/filantropia"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/graduados"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/idiomas"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/institucional"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/institucional/acreditacion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/institucional/comunicados-institucionales/comunicados-2026"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/institucional/pei"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/institucional/reglamentos/reglamentos"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/interactiva"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/internacionalizacion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/internacionalizacion/aprendizaje-global"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/internacionalizacion/convenios"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-academico-nacional"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/internacionalizacion/intercambio-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/internacionalizacion/misiones-en-eafit-programas-cortos-de-intercambio"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/linea-de-transparencia"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/mapa-del-sitio"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/noticias"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/noticias/sala-de-prensa"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/notificaciones-judiciales-y-certificados"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/nuestras-escuelas"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/nuestras-sedes"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/ongoing"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/organizaciones"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/organizaciones/talento-eafit/ceiba"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/organizaciones/talento-eafit/estudiantes"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/organizaciones/talento-eafit/estudiantes/practicas-estudiantiles/organizaciones"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/organizaciones/talento-eafit/graduados"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/orquesta-sinfonica-eafit"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/otros-programas"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/otros-programas/eventos"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/participa"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/politica-de-tratamiento-y-proteccion-de-datos-personales"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/posgrados"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/pqrsf"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/practicas-en-el-exterior"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/pregrados"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/profes-que-inspiran"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/registro-academico"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/reserva-espacios"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/servicios-en-linea"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/servicios/acentos/libreria-acentos"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/sigamos-en-contacto"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/cultura-ciencia-tecnologia-innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/formacionctei"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/innovacion-desarrollo-tecnologico/proyectos-ctei"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/investigacion"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/sistema-ciencia-tecnologia-innovacion/universidad-ninos"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/sostenibilidad"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/talento-eafit/reglamento-experiencias-talento"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/tarifas"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/terminos-condiciones"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/trabaja-con-nosotros"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/transparencia-y-acceso-la-informacion-publica"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/universidad-parque"
+  ],
+  [
+   "https://www.eafit.edu.co/organizaciones/talento-eafit",
+   "https://www.eafit.edu.co/vida-cultural"
+  ]
+ ]
+}

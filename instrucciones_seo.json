@@ -1,0 +1,111 @@
+{
+  "campos": [
+    {
+      "campo": "page_title",
+      "modo": "modelo",
+      "min_caracteres": 50,
+      "max_caracteres": 60,
+      "instruccion": "Usa la fórmula [Nombre completo del Centro o Unidad]: [Tema clave o Enfoque] | Universidad EAFIT. Escribe entre 50 y 60 caracteres, con el nombre completo y no solo la sigla. Usa únicamente información factual disponible."
+    },
+    {
+      "campo": "description",
+      "modo": "modelo",
+      "min_caracteres": 150,
+      "max_caracteres": 160,
+      "instruccion": "Escribe una sola oración de 150 a 160 caracteres con la fórmula [Qué es] + Universidad EAFIT en [Ciudad] + dos servicios/temas clave para [público o sector]. Sé muy conciso: selecciona solo los datos más importantes del contexto, no enumeres todos los servicios. No inventes datos."
+    },
+    {
+      "campo": "abstract",
+      "modo": "modelo",
+      "min_palabras": 8,
+      "max_caracteres": 159,
+      "instruccion": "Escribe un resumen distinto de la description, de máximo 159 caracteres incluidos espacios y signos. Resume qué es y su enfoque, e incluye únicamente los servicios, público y ubicación relevantes que estén disponibles en el contexto. No copies la description, no uses solo siglas ni inventes datos. Si faltan hechos para redactarlo, devuelve null."
+    },
+    {
+      "campo": "keywords",
+      "modo": "modelo",
+      "max_caracteres": 255,
+      "instruccion": "Genera palabras clave separadas por coma, máximo 255 caracteres: entidad matriz, nombre de la página/unidad + EAFIT, entidad + ciudad y país, subtemas o trámites + EAFIT, conceptos diferenciadores y alcance/sedes. No dejes el campo vacío ni uses solo siglas."
+    },
+    {
+      "campo": "schema_name",
+      "modo": "modelo",
+      "min_palabras": 2,
+      "instruccion": "Usa el nombre oficial y completo del centro o unidad como texto limpio. No agregues palabras clave promocionales ni uses solo la sigla. Si el nombre oficial no puede determinarse del contexto, devuelve null."
+    },
+    {
+      "campo": "og_title",
+      "modo": "copiar",
+      "origen": "page_title",
+      "max_caracteres": 60,
+      "instruccion": "Copiar exactamente el Page Title optimizado; máximo 60 caracteres."
+    },
+    {
+      "campo": "og_description",
+      "modo": "copiar",
+      "origen": "description",
+      "max_caracteres": 160,
+      "instruccion": "Copiar exactamente la Description de Basic Tags; máximo 160 caracteres."
+    },
+    {
+      "campo": "schema_description",
+      "modo": "copiar",
+      "origen": "description",
+      "instruccion": "Usar la misma descripción factual de Basic Tags en texto limpio."
+    },
+    {
+      "campo": "canonical_url",
+      "modo": "manual",
+      "instruccion": "Usa el token [current-page:url:absolute] o la URL final limpia, sin parámetros de seguimiento."
+    },
+    {
+      "campo": "robots_index",
+      "modo": "manual",
+      "instruccion": "Debe estar activado index; no marcar noindex ni nosnippet."
+    },
+    {
+      "campo": "robots_follow",
+      "modo": "manual",
+      "instruccion": "Debe estar activado follow."
+    },
+    {
+      "campo": "og_type",
+      "modo": "manual",
+      "instruccion": "Selecciona website para páginas principales de centros/escuelas o article para noticias/publicaciones."
+    },
+    {
+      "campo": "og_image",
+      "modo": "manual",
+      "instruccion": "Sube o enlaza una imagen principal real de 1200 x 630 px, sin texto saturado y de menos de 300 KB."
+    },
+    {
+      "campo": "og_image_height",
+      "modo": "manual",
+      "instruccion": "La altura de la imagen Open Graph debe ser 630 px."
+    },
+    {
+      "campo": "og_locale",
+      "modo": "manual",
+      "instruccion": "Usa siempre el código de español de Colombia es_CO."
+    },
+    {
+      "campo": "schema_type",
+      "modo": "manual",
+      "instruccion": "Para centros de estudio/investigación, selecciona ResearchOrganization o EducationalOrganization."
+    }
+  ],
+  "checklist": [
+    {
+      "campo": "h1",
+      "instruccion": "Debe existir un único H1 con el nombre completo, no solo la sigla."
+    },
+    {
+      "campo": "primer_parrafo",
+      "instruccion": "Las primeras tres líneas visibles deben explicar qué hace el centro, sus líneas de énfasis y cómo contactarlo."
+    },
+    {
+      "campo": "alt_imagenes",
+      "instruccion": "Revisar que todas las imágenes de la página tengan texto alternativo."
+    }
+  ]
+}

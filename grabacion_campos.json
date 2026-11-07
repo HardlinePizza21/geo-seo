@@ -1,0 +1,86 @@
+{
+ "campos": {
+  "page_title": {
+   "selector": "#edit-field-meta-tags-0-basic-title",
+   "tipo": "text",
+   "label": "Título de la página",
+   "seccion": "Basic tags",
+   "contexto": true
+  },
+  "description": {
+   "selector": "#edit-field-meta-tags-0-basic-description",
+   "tipo": "textarea",
+   "label": "Descripción",
+   "seccion": "Basic tags",
+   "contexto": true
+  },
+  "abstract": {
+   "selector": "#edit-field-meta-tags-0-basic-abstract",
+   "tipo": "textarea",
+   "label": "Abstract",
+   "seccion": "Basic tags",
+   "contexto": true
+  },
+  "keywords": {
+   "selector": "#edit-field-meta-tags-0-basic-keywords",
+   "tipo": "text",
+   "label": "Palabras clave",
+   "seccion": "Basic tags",
+   "contexto": true
+  },
+  "canonical_url": {
+   "selector": "#edit-field-meta-tags-0-advanced-canonical-url",
+   "tipo": "text",
+   "label": "Canonical URL",
+   "seccion": "Avanzado",
+   "contexto": false,
+   "default": "[current-page:url:absolute]"
+  },
+  "robots_index": {
+   "selector": "#edit-field-meta-tags-0-advanced-robots-robots-index",
+   "tipo": "checkbox",
+   "label": "index - Allow search engines to index this page (assumed).",
+   "seccion": "Avanzado",
+   "contexto": false,
+   "default": true
+  },
+  "robots_follow": {
+   "selector": "#edit-field-meta-tags-0-advanced-robots-robots-follow",
+   "tipo": "checkbox",
+   "label": "follow - Allow search engines to follow links on this page (assumed).",
+   "seccion": "Avanzado",
+   "contexto": false,
+   "default": true
+  },
+  "og_title": {
+   "selector": "#edit-field-meta-tags-0-open-graph-og-title",
+   "tipo": "text",
+   "label": "Título",
+   "seccion": "Open Graph",
+   "contexto": true
+  },
+  "og_description": {
+   "selector": "#edit-field-meta-tags-0-open-graph-og-description",
+   "tipo": "textarea",
+   "label": "Descripción",
+   "seccion": "Open Graph",
+   "contexto": true,
+   "default": "[current-page:metatag:description:value]"
+  },
+  "og_image": {
+   "selector": "#edit-field-meta-tags-0-open-graph-og-image",
+   "tipo": "text",
+   "label": "Imagen",
+   "seccion": "Open Graph",
+   "contexto": false
+  },
+  "og_locale": {
+   "selector": "#edit-field-meta-tags-0-open-graph-og-locale",
+   "tipo": "text",
+   "label": "Regionalización",
+   "seccion": "Open Graph",
+   "contexto": false,
+   "default": "es_CO"
+  }
+ }
+}

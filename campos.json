@@ -1,0 +1,49 @@
+{
+ "guardar": "#edit-submit",
+ "modelo": {
+  "endpoint": "http://127.0.0.1:11434/api/generate",
+  "nombre": "llama3.2:3b",
+  "timeout": 180
+ },
+ "campos": {
+  "canonical_url": {
+   "selector": "[name='field_meta_tags[0][advanced][canonical_url]'], #edit-field-meta-tags-0-advanced-canonical-url",
+   "default": "[current-page:url:absolute]"
+  },
+  "robots_index": {
+   "selector": "[name='field_meta_tags[0][advanced][robots][robots][index]'], #edit-field-meta-tags-0-advanced-robots-robots-index",
+   "tipo": "checkbox",
+   "default": true
+  },
+  "robots_follow": {
+   "selector": "[name='field_meta_tags[0][advanced][robots][robots][follow]'], #edit-field-meta-tags-0-advanced-robots-robots-follow",
+   "tipo": "checkbox",
+   "default": true
+  },
+  "og_site_name": {
+   "selector": "[name='field_meta_tags[0][open_graph][og_site_name]'], #edit-field-meta-tags-0-open-graph-og-site-name",
+   "default": "[site:name]"
+  },
+  "og_url": {
+   "selector": "[name='field_meta_tags[0][open_graph][og_url]'], #edit-field-meta-tags-0-open-graph-og-url",
+   "default": "[current-page:url]"
+  },
+  "og_description": {
+   "selector": "[name='field_meta_tags[0][open_graph][og_description]'], #edit-field-meta-tags-0-open-graph-og-description",
+   "default": "[current-page:metatag:description:value]"
+  },
+  "og_image": {
+   "selector": "[name='field_meta_tags[0][open_graph][og_image]'], #edit-field-meta-tags-0-open-graph-og-image"
+  },
+  "og_image_url": {
+   "selector": "[name='field_meta_tags[0][open_graph][og_image_url]']",
+   "default": "[node:field_image:entity:url]",
+   "solo_si_og_image": true
+  },
+  "og_image_height": {
+   "selector": "[name='field_meta_tags[0][open_graph][og_image_height]'], #edit-field-meta-tags-0-open-graph-og-image-height",
+   "default": "630px",
+   "solo_si_og_image": true
+  }
+ }
+}
