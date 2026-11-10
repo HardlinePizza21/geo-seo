@@ -140,8 +140,10 @@ def draw(nodes, edges, output):
         size = 10 + 3 * min(indeg.get(url, 0), 15)
         if "og_image_rota" in marcas:
             color, size = "#ff00ff", size + 10
+        elif any(c.get("origen") == "modelo" for c in (d.get("campos") or {}).values()):
+            color = "#00c853"  # verde: contenido generado con IA
         elif d.get("cambios_automaticos"):
-            color = "#ff8c00"
+            color = "#1e64ff"  # azul: revisión automática
         net.add_node(
             url,
             label=urlparse(url).path or "/",

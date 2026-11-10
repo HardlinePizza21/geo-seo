@@ -1238,7 +1238,7 @@ def cmd_report(args):
         print(f"  ROTA {nodes[u]['og_image']['status']} {nodes[u]['og_image']['url']} <- {u}")
     from crawler import draw
     draw(nodes, edges, args.html)
-    print(f"Grafo -> {args.html} (magenta: og_image rota, naranja: cambios automáticos)")
+    print(f"Grafo -> {args.html} (magenta: og_image rota, verde: contenido IA, azul: cambios automáticos)")
 
 
 def main():
