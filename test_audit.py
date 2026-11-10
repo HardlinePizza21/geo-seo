@@ -9,6 +9,12 @@ from graph_store import ROOT
 
 
 class AuditWorkflowTests(unittest.TestCase):
+    def setUp(self):
+        # La reescritura llama a Ollama directamente; en las pruebas no debe tocar el servidor real.
+        parche = patch("audit.reescribir_longitud", return_value=None)
+        parche.start()
+        self.addCleanup(parche.stop)
+
     def test_recorded_fields_keep_selectors_without_values(self):
         events = [
             {
@@ -200,9 +206,11 @@ class AuditWorkflowTests(unittest.TestCase):
             {"description": text, "abstract": text},
             {"abstract": text},
             {"abstract": text},
+            {"abstract": text},
+            {"abstract": text},
         ]):
             values, errors = audit.generar_campos_validados(
-                ["description", "abstract"], rules, {"pagina": {}}, audit.OLLAMA_DEFAULT,
+                ["description", "abstract"], rules, {"pagina": {}}, {**audit.OLLAMA_DEFAULT, "por_campo": False},
             )
 
         self.assertEqual(values, {"description": text})
@@ -224,7 +232,7 @@ class AuditWorkflowTests(unittest.TestCase):
             )
         self.assertEqual(values, {})
         self.assertIn("291 caracteres; el máximo es 159", errors["abstract"])
-        self.assertEqual(generate.call_count, 3)
+        self.assertEqual(generate.call_count, 5)
 
     def test_generated_description_must_differ_from_existing_abstract(self):
         text = "Centro universitario de investigación aplicada para organizaciones en Medellín."
@@ -296,7 +304,9 @@ class AuditWorkflowTests(unittest.TestCase):
             )
         elements["abstract"].fill.assert_called_once_with(abstract)
         elements["description"].fill.assert_not_called()
-        self.assertEqual(info["campos"]["abstract"]["accion"], "aplicado")
+        self.assertEqual(info["campos"]["abstract"]["accion"], "llenado_sin_guardar")
+        self.assertTrue(info["pendiente_guardar"])
+        page.locator.assert_not_called()  # no pulsa Guardar: eso ocurre con el primer Enter
 
     def test_existing_abstract_is_preserved_and_flagged_for_review(self):
         text = "Texto existente " * 20
@@ -334,7 +344,37 @@ class AuditWorkflowTests(unittest.TestCase):
         self.assertEqual(instructions["page_title"]["modo"], "modelo")
         self.assertEqual(instructions["canonical_url"]["modo"], "manual")
         self.assertEqual(instructions["og_title"]["modo"], "copiar")
-        self.assertIn("null", instructions["schema_name"]["instruccion"])
+        self.assertIn("Fórmula", instructions["abstract"]["instruccion"])
+        self.assertIn("palabras clave", instructions["abstract"]["instruccion"])
+        self.assertNotIn("schema_name", instructions)
+
+    def test_abstract_that_lists_keywords_is_detected(self):
+        keywords = "Universidad EAFIT, información institucional EAFIT, PEI EAFIT, historia de EAFIT, estatutos EAFIT"
+        lista = "La Universidad EAFIT ofrece información institucional EAFIT, PEI EAFIT e historia de EAFIT en Medellín."
+        sintesis = "Desarrollamos y compartimos el marco institucional de la Universidad EAFIT en Medellín, Colombia."
+        self.assertTrue(audit.parece_lista_keywords(lista, keywords))
+        self.assertFalse(audit.parece_lista_keywords(sintesis, keywords))
+
+    def test_console_summary_shows_filled_fields_with_content(self):
+        nodo = {
+            "estado": "dry_run_automatico_con_marcas",
+            "marcas": ["imagenes_sin_alt"],
+            "revision_contenido": {"imagenes_sin_alt": 2},
+            "campos": {
+                "abstract": {"previo": "", "nuevo": "Texto nuevo", "accion": "pendiente_dry_run",
+                             "origen": "modelo", "modelo": "gemma3:4b"},
+                "og_locale": {"previo": "", "nuevo": "es_CO", "accion": "pendiente_dry_run", "origen": "predeterminado"},
+                "page_title": {"previo": "", "nuevo": None, "accion": "error_modelo", "error": "tiene 44 caracteres"},
+                "keywords": {"previo": "a, b", "nuevo": "a, b", "accion": "sin_cambios"},
+            },
+        }
+        texto = audit.resumen_pagina("https://x", nodo, "gemma3:4b", apply=False)
+        self.assertIn("SE LLENARÍA (2)", texto)
+        self.assertIn('+ abstract  [IA gemma3:4b]', texto)
+        self.assertIn('nuevo: "Texto nuevo" (11 car.)', texto)
+        self.assertIn("! page_title: tiene 44 caracteres", texto)
+        self.assertIn("SIN CAMBIOS: keywords", texto)
+        self.assertIn("2 imágenes sin alt", texto)
 
     def test_reset_removes_only_processing_states(self):
         nodes = {
@@ -374,6 +414,42 @@ class AuditWorkflowTests(unittest.TestCase):
         self.assertEqual(set(proposals), {"page_title", "keywords"})
         self.assertEqual(proposals["page_title"]["modelo"], "llama3.2:3b")
         self.assertEqual(proposals["keywords"]["accion"], "error_modelo")
+
+    def test_page_title_suffix_is_swapped_to_fit_range(self):
+        rule = {"campo": "page_title", "min_caracteres": 50, "max_caracteres": 60}
+        largo = "Centro de Valor Público: Investigación y Consultoría | Universidad EAFIT"
+        self.assertEqual(
+            audit.ajustar_sobrelongitud(rule, largo),
+            "Centro de Valor Público: Investigación y Consultoría | EAFIT",
+        )
+        corto = "Universidad EAFIT: Información Institucional | EAFIT"
+        corto_sin_rango = "Información institucional | EAFIT"
+        self.assertEqual(audit.ajustar_sobrelongitud(rule, corto), corto)
+        self.assertEqual(audit.ajustar_sobrelongitud(rule, corto_sin_rango), corto_sin_rango)
+
+    def test_long_abstract_is_cut_at_clause_boundary(self):
+        rule = {"campo": "abstract", "max_caracteres": 159}
+        texto = ("La Universidad EAFIT es una institución de conocimiento aplicado en Medellín, Colombia, "
+                 "con investigación en ingeniería y ciencias, además de consultoría para empresas del sector público.")
+        ajustado = audit.ajustar_sobrelongitud(rule, texto)
+        self.assertLessEqual(len(ajustado), 159)
+        self.assertTrue(ajustado.endswith("."))
+        self.assertTrue(texto.startswith(ajustado[:-1]))
+
+    def test_existing_invalid_values_are_detected_for_correction(self):
+        reglas = {r["campo"]: r for r in audit.cargar_instrucciones()["campos"]}
+        keywords = "Universidad EAFIT, información institucional EAFIT, PEI EAFIT, historia de EAFIT, estatutos EAFIT"
+        valores = {"keywords": keywords, "description": "Otra cosa"}
+        self.assertIn("igual a keywords", audit.motivo_valor_existente_invalido(reglas["abstract"], keywords, valores))
+        self.assertIn("mínimo es 50", audit.motivo_valor_existente_invalido(
+            reglas["page_title"], "Información institucional", valores))
+        self.assertIsNone(audit.motivo_valor_existente_invalido(reglas["abstract"], "", valores))
+
+    def test_retry_instruction_says_how_many_words_to_cut(self):
+        rule = {"campo": "abstract", "max_caracteres": 159}
+        self.assertIn("Elimina unas", audit.instruccion_ajuste(rule, "a" * 200))
+        self.assertIn("Agrega unas", audit.instruccion_ajuste({"min_caracteres": 50}, "a" * 30))
+        self.assertEqual(audit.palabras_objetivo(rule), "máximo 22 palabras")
 
 
 if __name__ == "__main__":

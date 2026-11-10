@@ -5,33 +5,27 @@
       "modo": "modelo",
       "min_caracteres": 50,
       "max_caracteres": 60,
-      "instruccion": "Usa la fórmula [Nombre completo del Centro o Unidad]: [Tema clave o Enfoque] | Universidad EAFIT. Escribe entre 50 y 60 caracteres, con el nombre completo y no solo la sigla. Usa únicamente información factual disponible."
+      "instruccion": "Fórmula: [Nombre completo de la página o unidad]: [Tema clave o enfoque] | Universidad EAFIT. Entre 50 y 60 caracteres, con el nombre completo y no solo la sigla. Elige el tema clave que mejor resuma la página aunque no aparezca literal."
     },
     {
       "campo": "description",
       "modo": "modelo",
       "min_caracteres": 150,
       "max_caracteres": 160,
-      "instruccion": "Escribe una sola oración de 150 a 160 caracteres con la fórmula [Qué es] + Universidad EAFIT en [Ciudad] + dos servicios/temas clave para [público o sector]. Sé muy conciso: selecciona solo los datos más importantes del contexto, no enumeres todos los servicios. No inventes datos."
+      "instruccion": "Fórmula: [Qué es] de la Universidad EAFIT en [Ciudad]. Especializado en [2 o 3 líneas de trabajo o servicios] para [público o sector]. Entre 150 y 160 caracteres. Escoge solo lo más importante; no enumeres todo."
     },
     {
       "campo": "abstract",
       "modo": "modelo",
       "min_palabras": 8,
       "max_caracteres": 159,
-      "instruccion": "Escribe un resumen distinto de la description, de máximo 159 caracteres incluidos espacios y signos. Resume qué es y su enfoque, e incluye únicamente los servicios, público y ubicación relevantes que estén disponibles en el contexto. No copies la description, no uses solo siglas ni inventes datos. Si faltan hechos para redactarlo, devuelve null."
+      "instruccion": "Fórmula: [Qué es + enfoque] de la Universidad EAFIT en [Ciudad, País]. Desarrollamos [2 o 3 servicios] en [temas clave] para [público o sector]. Máximo 159 caracteres. Es la síntesis que leerán los motores de IA: explica el propósito y el valor de la página para quien la visita, en voz institucional ('Desarrollamos', 'Ofrecemos', 'Acompañamos'). Debe ser distinto de la description en enfoque y redacción, y NO debe ser una lista de las palabras clave. Puedes inferir el enfoque y el público a partir del texto de la página."
     },
     {
       "campo": "keywords",
       "modo": "modelo",
       "max_caracteres": 255,
-      "instruccion": "Genera palabras clave separadas por coma, máximo 255 caracteres: entidad matriz, nombre de la página/unidad + EAFIT, entidad + ciudad y país, subtemas o trámites + EAFIT, conceptos diferenciadores y alcance/sedes. No dejes el campo vacío ni uses solo siglas."
-    },
-    {
-      "campo": "schema_name",
-      "modo": "modelo",
-      "min_palabras": 2,
-      "instruccion": "Usa el nombre oficial y completo del centro o unidad como texto limpio. No agregues palabras clave promocionales ni uses solo la sigla. Si el nombre oficial no puede determinarse del contexto, devuelve null."
+      "instruccion": "Palabras clave separadas por coma, máximo 255 caracteres, en este orden: entidad matriz (Universidad EAFIT), nombre de la página o unidad + EAFIT, entidad + ciudad y país, subtemas o trámites + EAFIT, conceptos diferenciadores y alcance o sedes. Incluye términos que un usuario o un motor de IA usaría para buscar esta página. No uses solo siglas."
     },
     {
       "campo": "og_title",
@@ -46,12 +40,6 @@
       "origen": "description",
       "max_caracteres": 160,
       "instruccion": "Copiar exactamente la Description de Basic Tags; máximo 160 caracteres."
-    },
-    {
-      "campo": "schema_description",
-      "modo": "copiar",
-      "origen": "description",
-      "instruccion": "Usar la misma descripción factual de Basic Tags en texto limpio."
     },
     {
       "campo": "canonical_url",
@@ -69,11 +57,6 @@
       "instruccion": "Debe estar activado follow."
     },
     {
-      "campo": "og_type",
-      "modo": "manual",
-      "instruccion": "Selecciona website para páginas principales de centros/escuelas o article para noticias/publicaciones."
-    },
-    {
       "campo": "og_image",
       "modo": "manual",
       "instruccion": "Sube o enlaza una imagen principal real de 1200 x 630 px, sin texto saturado y de menos de 300 KB."
@@ -87,11 +70,6 @@
       "campo": "og_locale",
       "modo": "manual",
       "instruccion": "Usa siempre el código de español de Colombia es_CO."
-    },
-    {
-      "campo": "schema_type",
-      "modo": "manual",
-      "instruccion": "Para centros de estudio/investigación, selecciona ResearchOrganization o EducationalOrganization."
     }
   ],
   "checklist": [

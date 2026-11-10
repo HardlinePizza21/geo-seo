@@ -243,15 +243,62 @@ def validar_valor_generado(campo, valor):
     return valor
 
 
+SUFIJO_LARGO, SUFIJO_CORTO = " | Universidad EAFIT", " | EAFIT"
+
+
+def ajustar_page_title(campo, valor):
+    """Intercambia '| Universidad EAFIT' y '| EAFIT' (ambos válidos según el Plan SEO) para entrar en el rango."""
+    minimo, maximo = campo.get("min_caracteres"), campo.get("max_caracteres")
+    texto = re.sub(r"(\s*[|\-–]\s*(Universidad\s+)?EAFIT)+\s*$", "", valor.strip(), flags=re.IGNORECASE)
+    if texto == valor.strip():
+        return valor
+    for sufijo in (SUFIJO_LARGO, SUFIJO_CORTO):
+        candidato = texto + sufijo
+        if (minimo is None or len(candidato) >= minimo) and (maximo is None or len(candidato) <= maximo):
+            return candidato
+    return valor
+
+
+def normalizar_keywords(valor):
+    """Quita términos repetidos (sin distinguir mayúsculas/tildes) y 'EAFIT' suelto si ya hay otros con EAFIT."""
+    vistos, terminos = set(), []
+    for termino in (t.strip() for t in valor.split(",")):
+        clave = normalizar_texto(termino)
+        if termino and clave not in vistos:
+            vistos.add(clave)
+            terminos.append(termino)
+    if len(terminos) > 2 and any("eafit" in normalizar_texto(t) and normalizar_texto(t) != "eafit" for t in terminos):
+        terminos = [t for t in terminos if normalizar_texto(t) != "eafit"]
+    return ", ".join(terminos)
+
+
 def ajustar_sobrelongitud(campo, valor):
+    if isinstance(valor, str) and campo.get("campo") == "page_title":
+        return ajustar_page_title(campo, valor)
+    if isinstance(valor, str) and campo.get("campo") == "keywords":
+        return normalizar_keywords(valor)
     maximo = campo.get("max_caracteres")
     if (
         not isinstance(valor, str)
         or campo.get("campo") not in {"description", "abstract"}
         or maximo is None
         or len(valor) <= maximo
-        or len(valor) - maximo > 10
     ):
+        return valor
+    # Los modelos pequeños suelen escribir una oración de más. Se conserva el prefijo más largo que
+    # termine en oración completa (o, si no hay, en cláusula) y que quede dentro del rango.
+    minimo = campo.get("min_caracteres") or int(maximo * 0.6)
+    oraciones = [valor[:m.end()].strip() for m in re.finditer(r"[.!?](?=\s|$)", valor)]
+    clausulas = [
+        valor[:m.start()].rstrip(" ,;:-") + "."
+        for m in re.finditer(r"[,;]\s|\s(?:y|e|para|con)\s", valor)
+        if valor[:m.start()].rstrip().split()[-1].lower() not in {"a", "al", "de", "del", "en", "la", "el", "los", "las"}
+    ]
+    for candidatos in (oraciones, clausulas):
+        validos = [c for c in candidatos if minimo <= len(c) <= maximo]
+        if validos:
+            return max(validos, key=len)
+    if len(valor) - maximo > 10:
         return valor
     prefijo = valor[:maximo]
     if " " not in prefijo:
@@ -263,6 +310,18 @@ def ajustar_sobrelongitud(campo, valor):
     if len(ajustado) < maximo and not ajustado.endswith((".", "!", "?")):
         ajustado += "."
     return ajustado
+
+
+def parece_lista_keywords(abstract, keywords, minimo=3):
+    """True si el abstract contiene literalmente 3 o más frases de las palabras clave (sin contar 'Universidad EAFIT')."""
+    if not isinstance(abstract, str) or not isinstance(keywords, str):
+        return False
+    texto = normalizar_texto(abstract)
+    terminos = {
+        normalizar_texto(t).strip() for t in keywords.split(",")
+        if len(t.split()) >= 2 and normalizar_texto(t).strip() not in {"universidad eafit", "eafit"}
+    }
+    return sum(1 for t in terminos if t and t in texto) >= minimo
 
 
 def textos_iguales(primero, segundo):
@@ -291,7 +350,36 @@ def advertencias_campos(campos, instrucciones):
     return advertencias
 
 
-def generar_con_ollama(campos_pendientes, instrucciones, contexto, configuracion):
+CARACTERES_POR_PALABRA = 7  # promedio en español incluyendo el espacio; los LLM cuentan palabras mejor que caracteres
+
+
+def palabras_objetivo(regla):
+    """Traduce el límite de caracteres a un rango de palabras que el modelo sí puede seguir."""
+    minimo, maximo = regla.get("min_caracteres"), regla.get("max_caracteres")
+    if maximo is None or regla.get("campo") == "keywords":
+        return None
+    tope = max(1, (maximo - 5) // CARACTERES_POR_PALABRA)
+    if minimo is None:
+        return f"máximo {tope} palabras"
+    return f"entre {max(1, -(-minimo // CARACTERES_POR_PALABRA))} y {max(tope, -(-minimo // CARACTERES_POR_PALABRA))} palabras"
+
+
+def instruccion_ajuste(regla, valor):
+    """Instrucción concreta de cuánto recortar o alargar, en palabras."""
+    minimo, maximo = regla.get("min_caracteres"), regla.get("max_caracteres")
+    largo = len(valor)
+    if maximo is not None and largo > maximo:
+        sobra = largo - maximo + 5
+        return (f"Te pasaste: tiene {largo} caracteres y el máximo es {maximo}. Elimina unas "
+                f"{-(-sobra // CARACTERES_POR_PALABRA)} palabras (~{sobra} caracteres) quitando detalles secundarios.")
+    if minimo is not None and largo < minimo:
+        falta = minimo - largo + 3
+        return (f"Quedó corto: tiene {largo} caracteres y el mínimo es {minimo}. Agrega unas "
+                f"{-(-falta // CARACTERES_POR_PALABRA)} palabras (~{falta} caracteres) usando solo hechos del contexto.")
+    return None
+
+
+def generar_con_ollama(campos_pendientes, instrucciones, contexto, configuracion, temperatura=0.2):
     endpoint = configuracion.get("endpoint", OLLAMA_DEFAULT["endpoint"])
     url = urlparse(endpoint)
     if url.scheme != "http" or url.hostname not in {"127.0.0.1", "localhost", "::1"}:
@@ -307,12 +395,18 @@ def generar_con_ollama(campos_pendientes, instrucciones, contexto, configuracion
     }
     prompt = {
         "tarea": (
-            "Completa únicamente los campos solicitados. No dejes campos vacíos ni uses solo siglas. "
-            "Usa solo hechos del contexto, "
-            "no inventes ciudad, público, servicios ni datos institucionales. Si falta "
-            "información factual para cumplir la instrucción, devuelve null para ese campo. "
-            "Cuenta los caracteres antes de responder: espacios y signos también cuentan. "
-            "Abstract y description son campos distintos: no copies el mismo texto en ambos."
+            "Eres redactor SEO y GEO de la Universidad EAFIT (Medellín, Colombia). Completa únicamente "
+            "los campos solicitados. Tienes libertad de redacción: reformula con tus propias palabras, "
+            "sintetiza el texto de la página e infiere con sentido común el enfoque, el propósito y el "
+            "público al que se dirige (por ejemplo, estudiantes, empresas, investigadores o donantes). "
+            "Lo que no puedes inventar son hechos verificables: cifras, fechas, nombres propios, "
+            "programas, premios, alianzas o datos de contacto que no aparezcan en el contexto. "
+            "Las fórmulas son plantillas: rellena cada [corchete] con información de ESTA página; los temas, "
+            "servicios y públicos deben salir del texto de la página, no de otras áreas de la universidad. "
+            "Devuelve null solo si el contexto no permite saber de qué trata la página. "
+            "No dejes campos vacíos ni uses solo siglas. Respeta la longitud indicada en palabras. "
+            "Cada campo debe aportar algo distinto: no repitas la misma frase ni la misma estructura "
+            "entre page_title, description, abstract y keywords."
         ),
         "contexto": contexto,
         "campos_a_generar": [
@@ -327,7 +421,8 @@ def generar_con_ollama(campos_pendientes, instrucciones, contexto, configuracion
                  else f"máximo {max(1, instrucciones[clave]['max_caracteres'] - 10)} caracteres"
                  if instrucciones[clave].get("max_caracteres") is not None
                  else None
-             )}
+             ),
+             "palabras_objetivo": palabras_objetivo(instrucciones[clave])}
             for clave in campos_pendientes
         ],
         "respuesta": "Un objeto JSON con exactamente las claves solicitadas; cada valor es texto o null.",
@@ -340,7 +435,7 @@ def generar_con_ollama(campos_pendientes, instrucciones, contexto, configuracion
                 "prompt": json.dumps(prompt, ensure_ascii=False),
                 "stream": False,
                 "format": esquema,
-                "options": {"temperature": 0.2},
+                "options": {"temperature": temperatura},
             },
             timeout=timeout,
         )
@@ -363,12 +458,79 @@ def generar_con_ollama(campos_pendientes, instrucciones, contexto, configuracion
 
 
 def generar_campos_validados(campos_pendientes, instrucciones, contexto, configuracion):
+    """Genera campo por campo (los modelos pequeños controlan mucho mejor la longitud con una sola tarea).
+
+    Cada campo recibe los ya generados como contexto, para que no repita frases ni estructura.
+    Con "por_campo": false en la configuración del modelo se generan todos en una sola consulta.
+    """
+    if not configuracion.get("por_campo", True) or len(campos_pendientes) <= 1:
+        return _generar_lote(campos_pendientes, instrucciones, contexto, configuracion)
+    aceptados, errores = {}, {}
+    for nombre in campos_pendientes:
+        llenos = dict(contexto.get("campos_seleccionados_llenos", {}))
+        llenos.update({k: {"etiqueta": k, "valor": v} for k, v in aceptados.items()})
+        ok, err = _generar_lote([nombre], instrucciones, {**contexto, "campos_seleccionados_llenos": llenos}, configuracion)
+        aceptados.update(ok)
+        errores.update(err)
+    return aceptados, errores
+
+
+PALABRAS_OBJETIVO_REESCRITURA = 8.3  # caracteres por palabra que gemma3:4b produce de verdad (medido)
+
+
+def reescribir_longitud(regla, valor, configuracion, variantes=3):
+    """Pide al modelo una reescritura corta con un número de palabras calibrado; devuelve la primera válida o None.
+
+    Una tarea pequeña ("reescribe en N palabras") la cumple mucho mejor un modelo de 4B que generar con
+    todas las restricciones a la vez. Solo aplica a campos de texto con límite de caracteres.
+    """
+    minimo, maximo = regla.get("min_caracteres"), regla.get("max_caracteres")
+    if not isinstance(valor, str) or maximo is None or regla.get("campo") == "keywords":
+        return None
+    objetivo = (minimo + maximo) / 2 if minimo is not None else maximo * 0.85
+    palabras = max(4, round(objetivo / PALABRAS_OBJETIVO_REESCRITURA))
+    rango = f"entre {minimo} y {maximo}" if minimo is not None else f"máximo {maximo}"
+    prompt = (
+        f"Reescribe el siguiente texto en {palabras} palabras ({rango} caracteres). "
+        "Conserva qué es, la Universidad EAFIT, la ciudad y el público; elimina detalles secundarios. "
+        "No agregues datos nuevos. Responde solo con el texto reescrito, sin comillas.\n\nTexto: " + valor
+    )
+    if regla.get("campo") == "page_title":
+        prompt = prompt.replace("Responde solo", "Debe tener la forma 'Nombre: tema | EAFIT'. Responde solo")
+    for i in range(variantes):
+        try:
+            respuesta = requests.post(
+                configuracion.get("endpoint", OLLAMA_DEFAULT["endpoint"]),
+                json={
+                    "model": configuracion.get("nombre", OLLAMA_DEFAULT["nombre"]),
+                    "prompt": prompt, "stream": False,
+                    "options": {"temperature": 0.3 + 0.2 * i},
+                },
+                timeout=configuracion.get("timeout", OLLAMA_DEFAULT["timeout"]),
+            )
+            respuesta.raise_for_status()
+            texto = str(respuesta.json().get("response", "")).strip().strip('"“”')
+        except (requests.RequestException, ValueError):
+            return None
+        if regla.get("campo") == "page_title" and not re.search(r"\|\s*(Universidad\s+)?EAFIT\s*$", texto, re.I):
+            continue
+        try:
+            return validar_valor_generado(regla, ajustar_sobrelongitud(regla, texto))
+        except ValueError:
+            continue
+    return None
+
+
+def _generar_lote(campos_pendientes, instrucciones, contexto, configuracion):
     pendientes = list(campos_pendientes)
     aceptados = {}
     errores = {}
     contexto_actual = contexto
-    for intento in range(3):
-        salidas = generar_con_ollama(pendientes, instrucciones, contexto_actual, configuracion)
+    intentos = max(1, int(configuracion.get("intentos", 5)))
+    for intento in range(intentos):
+        # Subir un poco la temperatura en los reintentos evita que el modelo repita el mismo texto inválido.
+        temperatura = min(0.8, float(configuracion.get("temperatura", 0.4)) + 0.1 * intento)
+        salidas = generar_con_ollama(pendientes, instrucciones, contexto_actual, configuracion, temperatura)
         corregir = []
         motivos = {}
         for nombre in pendientes:
@@ -381,29 +543,23 @@ def generar_campos_validados(campos_pendientes, instrucciones, contexto, configu
                 aceptados[nombre] = validar_valor_generado(instrucciones[nombre], valor)
                 errores.pop(nombre, None)
             except ValueError as exc:
-                if intento == 0:
+                reescrito = reescribir_longitud(instrucciones[nombre], valor, configuracion)
+                if reescrito:
+                    aceptados[nombre] = reescrito
+                    errores.pop(nombre, None)
+                    continue
+                if intento < intentos - 1:
                     corregir.append(nombre)
+                    ajuste = instruccion_ajuste(instrucciones[nombre], valor) if isinstance(valor, str) else None
                     motivos[nombre] = {
                         "valor_rechazado": valor,
                         "motivo": str(exc),
-                        "instruccion": (
-                            "Reescribe este valor para que cumpla el rango indicado. Cuenta los caracteres "
-                            "y apunta a cinco caracteres por debajo del máximo; no agregues hechos."
+                        "instruccion": ajuste or (
+                            "Reescribe este valor para que cumpla la instrucción del campo; no agregues hechos."
                         ),
                     }
                 else:
-                    if intento < 2:
-                        corregir.append(nombre)
-                        motivos[nombre] = {
-                            "valor_rechazado": valor,
-                            "motivo": str(exc),
-                            "instruccion": (
-                                "La corrección anterior aún incumplió el límite. Haz una versión más breve "
-                                "que conserve los hechos y cumple el rango exactamente."
-                            ),
-                        }
-                    else:
-                        errores[nombre] = str(exc)
+                    errores[nombre] = str(exc)
         existentes = contexto.get("campos_seleccionados_llenos", {})
         description = aceptados.get("description", existentes.get("description", {}).get("valor"))
         abstract = aceptados.get("abstract", existentes.get("abstract", {}).get("valor"))
@@ -415,7 +571,7 @@ def generar_campos_validados(campos_pendientes, instrucciones, contexto, configu
                 valor = aceptados.pop(nombre)
                 otro = "description" if nombre == "abstract" else "abstract"
                 motivo = f"es igual a {otro}; ambos campos deben tener textos distintos"
-                if intento < 2:
+                if intento < intentos - 1:
                     corregir.append(nombre)
                     motivos[nombre] = {
                         "valor_rechazado": valor,
@@ -424,6 +580,22 @@ def generar_campos_validados(campos_pendientes, instrucciones, contexto, configu
                     }
                 else:
                     errores[nombre] = motivo
+        keywords = aceptados.get("keywords", existentes.get("keywords", {}).get("valor"))
+        if "abstract" in aceptados and parece_lista_keywords(aceptados["abstract"], keywords):
+            valor = aceptados.pop("abstract")
+            motivo = "parece la lista de palabras clave; debe ser una síntesis redactada"
+            if intento < intentos - 1:
+                corregir.append("abstract")
+                motivos["abstract"] = {
+                    "valor_rechazado": valor,
+                    "motivo": motivo,
+                    "instruccion": (
+                        "Reescribe el abstract como una síntesis con la fórmula indicada: qué es, qué "
+                        "desarrolla y para quién. No enumeres las palabras clave."
+                    ),
+                }
+            else:
+                errores["abstract"] = motivo
         if not corregir:
             break
         contexto_actual = {
@@ -550,15 +722,21 @@ def extraer_contexto_pagina(page):
       const main = document.querySelector('main, [role="main"], article') || document.body;
       const intro = Array.from(main.querySelectorAll('p')).map(limpio).find(Boolean) || '';
       const imagenes = Array.from(main.querySelectorAll('img'));
+      const subtitulos = Array.from(main.querySelectorAll('h2, h3')).map(limpio).filter(Boolean);
+      const parrafos = Array.from(main.querySelectorAll('p, li')).map(limpio).filter((t) => t.length > 40);
       return {
         h1_count: h1.length,
         h1: h1[0] || '',
         primer_parrafo: intro,
+        subtitulos: [...new Set(subtitulos)].slice(0, 12),
+        texto_principal: [...new Set(parrafos)].join(' '),
         imagenes_sin_alt: imagenes.filter((img) => !img.hasAttribute('alt') || !img.getAttribute('alt').trim()).length
       };
     }""")
     datos["h1"] = datos["h1"][:1000]
     datos["primer_parrafo"] = datos["primer_parrafo"][:3000]
+    datos["subtitulos"] = [s[:150] for s in datos.get("subtitulos", [])]
+    datos["texto_principal"] = datos.get("texto_principal", "")[:1800]
     return datos
 
 
@@ -582,13 +760,29 @@ def construir_contexto_campos(campos, valores, elementos):
     return contexto
 
 
-def procesar(ctx, url, campos, instrucciones, checklist, modelo_cfg, apply, guardar_sel, titulo=""):
+def motivo_valor_existente_invalido(regla, valor, valores):
+    """Motivo por el que un valor ya escrito en Drupal incumple las reglas del Plan SEO, o None si es válido."""
+    if not isinstance(valor, str) or not valor.strip():
+        return None
+    try:
+        validar_valor_generado(regla, valor)
+    except ValueError as exc:
+        return str(exc)
+    nombre = regla["campo"]
+    if nombre == "abstract":
+        for otro in ("description", "keywords"):
+            if textos_iguales(valor, valores.get(otro)):
+                return f"es igual a {otro}"
+    return None
+
+
+def procesar(ctx, url, campos, instrucciones, checklist, modelo_cfg, apply, guardar_sel, titulo="", corregir=False):
     info = {"campos": {}, "marcas": [], "revisado_en": datetime.now().isoformat(timespec="seconds")}
     page = ctx.new_page()
     page.goto(url, wait_until="domcontentloaded")
     contenido = extraer_contexto_pagina(page)
     info["revision_contenido"] = {
-        **contenido,
+        **{k: v for k, v in contenido.items() if k != "texto_principal"},
         "instrucciones_pdf": checklist,
     }
     if contenido["h1_count"] != 1:
@@ -637,15 +831,35 @@ def procesar(ctx, url, campos, instrucciones, checklist, modelo_cfg, apply, guar
             "titulo": titulo,
             "h1": contenido["h1"],
             "primer_parrafo": contenido["primer_parrafo"],
+            "subtitulos": contenido.get("subtitulos", []),
+            "texto_principal": contenido.get("texto_principal", ""),
         },
     }
+
+    invalidos = {}
+    for regla in instrucciones:
+        nombre = regla["campo"]
+        if regla["modo"] == "modelo" and nombre in elementos:
+            motivo = motivo_valor_existente_invalido(regla, valores[nombre], valores)
+            if motivo:
+                invalidos[nombre] = motivo
+                if not corregir:
+                    info["marcas"].append(f"existente_invalido_{nombre}")
+    a_regenerar = set(invalidos) if corregir else set()
 
     pendientes_modelo = [
         regla["campo"] for regla in instrucciones
         if regla["modo"] == "modelo"
         and regla["campo"] in elementos
-        and valor_vacio(valores[regla["campo"]], campos[regla["campo"]])
+        and (valor_vacio(valores[regla["campo"]], campos[regla["campo"]]) or regla["campo"] in a_regenerar)
     ]
+    if a_regenerar:
+        contexto["valores_existentes_rechazados"] = {
+            nombre: {"valor": valores[nombre], "motivo": invalidos[nombre]} for nombre in a_regenerar
+        }
+        contexto["campos_seleccionados_llenos"] = {
+            k: v for k, v in contexto["campos_seleccionados_llenos"].items() if k not in a_regenerar
+        }
     salidas_modelo = {}
     errores_modelo = []
     errores_por_campo = {}
@@ -670,8 +884,10 @@ def procesar(ctx, url, campos, instrucciones, checklist, modelo_cfg, apply, guar
             continue
         previo = valores[nombre]
         campo = campos[nombre]
-        if not valor_vacio(previo, campo):
+        if not valor_vacio(previo, campo) and nombre not in a_regenerar:
             info["campos"][nombre] = {"previo": previo, "nuevo": previo, "accion": "sin_cambios"}
+            if nombre in invalidos:
+                info["campos"][nombre]["advertencias"] = [f"valor existente inválido: {invalidos[nombre]}"]
             continue
 
         if campo.get("solo_si_og_image") and not og_img_val:
@@ -793,16 +1009,18 @@ def procesar(ctx, url, campos, instrucciones, checklist, modelo_cfg, apply, guar
                 el.set_checked(bool(nuevo))
             else:
                 el.fill(str(nuevo))
-            info["campos"][nombre]["accion"] = "aplicado"
-        page.locator(guardar_sel).first.click()
-        page.wait_for_load_state("domcontentloaded")
+            info["campos"][nombre]["accion"] = "llenado_sin_guardar"
+        # Quitar el foco del último campo (suele ser og_locale) para que Inicio/Fin desplacen la página.
+        page.evaluate("document.activeElement && document.activeElement.blur(); window.scrollTo(0, 0)")
+        # No se guarda aquí: el usuario revisa la pestaña abierta y guarda a mano en Drupal.
+        info["pendiente_guardar"] = True
     elif propuestos:
         for nombre in propuestos:
             info["campos"][nombre]["accion"] = "pendiente_dry_run"
 
     cambios = [
         nombre for nombre, dato in info["campos"].items()
-        if dato["accion"] in ("aplicado", "pendiente_dry_run")
+        if dato["accion"] in ("aplicado", "pendiente_dry_run", "llenado_sin_guardar")
     ]
     info["cambios_automaticos"] = cambios
     if cambios:
@@ -816,6 +1034,73 @@ def procesar(ctx, url, campos, instrucciones, checklist, modelo_cfg, apply, guar
     else:
         info["og_image"] = {"url": None, "status": None, "ok": None, "resultado": "sin_imagen"}
     return info, page
+
+
+def resumen_pagina(url, nodo, modelo_nombre, apply):
+    """Texto de consola: por cada página, qué campos se llenaron, con qué contenido y de dónde salió."""
+    def mostrar(valor):
+        if valor is None or valor == "":
+            return "(vacío)"
+        if isinstance(valor, bool):
+            return "marcado" if valor else "sin marcar"
+        return f"\"{valor}\" ({len(str(valor))} car.)"
+
+    def origen(dato):
+        if dato.get("origen") == "modelo":
+            return f"IA {dato.get('modelo', modelo_nombre)}"
+        if dato.get("origen") == "predeterminado":
+            return "valor predeterminado"
+        if dato.get("origen"):
+            return f"copia de {dato['origen']}"
+        return "?"
+
+    verbo = "LLENADO SIN GUARDAR" if apply else "SE LLENARÍA"
+    lineas = ["", "=" * 78, f"{url}", f"  estado: {nodo.get('estado')}"]
+    if nodo.get("error"):
+        lineas.append(f"  ERROR: {nodo['error']}")
+    campos = nodo.get("campos", {})
+    llenados = {n: d for n, d in campos.items() if d.get("accion") in ("aplicado", "pendiente_dry_run", "propuesto", "llenado_sin_guardar")}
+    revisar = {n: d for n, d in campos.items() if d.get("accion") in ("error_modelo", "requiere_revision")}
+    no_encontrados = [n for n, d in campos.items() if d.get("accion") == "campo_no_encontrado"]
+    sin_cambios = {n: d for n, d in campos.items() if d.get("accion") in ("sin_cambios", "omitido_sin_og_image")}
+
+    lineas.append(f"  {verbo} ({len(llenados)}):" if llenados else f"  {verbo}: ningún campo")
+    for nombre, dato in llenados.items():
+        lineas.append(f"    + {nombre}  [{origen(dato)}]")
+        lineas.append(f"        antes: {mostrar(dato.get('previo'))}")
+        lineas.append(f"        nuevo: {mostrar(dato.get('nuevo'))}")
+    if revisar:
+        lineas.append(f"  REQUIERE REVISIÓN ({len(revisar)}):")
+        for nombre, dato in revisar.items():
+            lineas.append(f"    ! {nombre}: {dato.get('error') or dato.get('accion')}")
+            if dato.get("nuevo") not in (None, ""):
+                lineas.append(f"        rechazado: {mostrar(dato.get('nuevo'))}")
+    if no_encontrados:
+        lineas.append(f"  NO ENCONTRADOS EN EL FORMULARIO: {', '.join(no_encontrados)}")
+    if sin_cambios:
+        lineas.append(f"  SIN CAMBIOS: {', '.join(sin_cambios)}")
+        for nombre, dato in sin_cambios.items():
+            for advertencia in dato.get("advertencias", []):
+                lineas.append(f"    ~ {nombre}: {advertencia}")
+    contenido = nodo.get("revision_contenido") or {}
+    revision = [m for m in nodo.get("marcas", []) if m in {
+        "h1_ausente", "h1_no_unico", "primer_parrafo_ausente", "imagenes_sin_alt", "sin_acceso",
+        "edicion_no_abrio", "og_image_rota", "error_playwright",
+    }]
+    if revision:
+        detalle = f" ({contenido['imagenes_sin_alt']} imágenes sin alt)" if "imagenes_sin_alt" in revision else ""
+        lineas.append(f"  REVISIÓN MANUAL: {', '.join(revision)}{detalle}")
+    return "\n".join(lineas)
+
+
+def ultimo_chunk(nodes, meta, tamano=10):
+    """Páginas del último chunk ejecutado. Si el archivo es anterior a este registro, se toman las
+    `tamano` páginas revisadas más recientemente."""
+    guardado = [u for u in meta.get("ultimo_chunk", []) if u in nodes]
+    if guardado:
+        return guardado
+    fechas = {u: d["revisado_en"] for u, d in nodes.items() if u != ROOT and d.get("revisado_en")}
+    return sorted(fechas, key=fechas.get)[-tamano:]
 
 
 def cmd_run(args):
@@ -834,15 +1119,26 @@ def cmd_run(args):
     else:
         nodes, edges, meta = load_graph(args.source)
         meta = {**meta, "source": args.source}
-    pendientes = [u for u, d in nodes.items() if u != ROOT and (args.redo or not d.get("estado") or d["estado"].startswith("dry_run"))][: args.chunk]
+    if args.ultimo:
+        pendientes = ultimo_chunk(nodes, meta, args.chunk)
+        if not pendientes:
+            print("No hay registro de un chunk anterior en", args.out)
+            return
+        print("Rehaciendo el último chunk visitado:")
+        for u in pendientes:
+            print(f"  - {u}")
+    else:
+        pendientes = [u for u, d in nodes.items() if u != ROOT and (args.redo or not d.get("estado") or d["estado"].startswith(("dry_run", "sin_guardar", "error_guardar")))][: args.chunk]
     if not pendientes:
         print("No quedan nodos pendientes.")
         return
+    meta["ultimo_chunk"] = pendientes
     print(("APLICANDO" if args.apply else "DRY-RUN") + f": {len(pendientes)} páginas")
 
     with sync_playwright() as p:
         ctx = p.chromium.launch_persistent_context(PROFILE, headless=False, **LAUNCH_OPTS)
         pages = []
+        por_guardar = {}
         for url in pendientes:
             try:
                 info, page = procesar(
@@ -855,6 +1151,7 @@ def cmd_run(args):
                     args.apply,
                     guardar_sel,
                     re.sub(r"\s*-\s*Universidad EAFIT$", "", nodes[url].get("title", "")),
+                    corregir=args.corregir,
                 )
             except PlaywrightError as exc:
                 info, page = {"marcas": ["error_playwright"], "error": str(exc)[:400]}, None
@@ -865,21 +1162,29 @@ def cmd_run(args):
                 nodes[url]["estado"] = ("" if args.apply else "dry_run_") + (
                     "automatico_ok" if not info["marcas"] else "automatico_con_marcas"
                 )
+            if nodes[url].pop("pendiente_guardar", False) and page:
+                # Hasta que se guarde, la página sigue pendiente: si el proceso se corta, se vuelve a visitar.
+                por_guardar[url] = (page, nodes[url]["estado"])
+                nodes[url]["estado"] = "sin_guardar"
             nodes[url].pop("error", None)
             if page:
                 pages.append(page)
-            print(f"  {url}: {nodes[url]['estado']} {info['marcas']}")
-            for nombre, propuesta in campos_propuestos_por_ia(info).items():
-                print(
-                    f"    IA/{propuesta.get('modelo', modelo_cfg['nombre'])} -> {nombre} "
-                    f"[{propuesta['accion']}]: {propuesta.get('nuevo')!r}"
-                )
-                if propuesta.get("error"):
-                    print(f"      motivo: {propuesta['error']}")
+            print(resumen_pagina(url, nodes[url], modelo_cfg["nombre"], args.apply))
             save_graph(args.out, nodes, edges, meta)
-        input("Revisa a mano imágenes, títulos, subtítulos, alt, banner y h1. Enter para cerrar y marcar el chunk... ")
+        if por_guardar:
+            # El script nunca pulsa Guardar: el usuario revisa y guarda cada pestaña a mano en Drupal.
+            print(f"\n{len(por_guardar)} páginas quedaron llenadas SIN GUARDAR en el navegador:")
+            for url in por_guardar:
+                print(f"  - {url}")
+            print("Revísalas, corrige lo que necesites y pulsa Guardar en Drupal en cada una.")
+        input("Revisa a mano imágenes, títulos, subtítulos, alt, banner y h1. "
+              "Cuando termines (y hayas guardado), Enter para cerrar y marcar el chunk... ")
         for u in pendientes:
             if args.apply:
+                if u in por_guardar:
+                    for dato in nodes[u].get("campos", {}).values():
+                        if dato.get("accion") == "llenado_sin_guardar":
+                            dato["accion"] = "llenado_guardado_manual"
                 nodes[u]["estado"] = "revisado"
         save_graph(args.out, nodes, edges, meta)
         ctx.close()
@@ -947,6 +1252,11 @@ def main():
     u.add_argument("--source", default="resultado.json")
     u.add_argument("--out", default="auditoria.json")
     u.add_argument("--redo", action="store_true", help="reprocesar nodos ya procesados (p. ej. tras corregir campos.json)")
+    u.add_argument("--ultimo", action="store_true", help="volver a procesar exactamente las páginas del último chunk ejecutado")
+    u.add_argument(
+        "--corregir", action="store_true",
+        help="regenerar con IA los campos ya llenos que incumplen las reglas (longitud, solo siglas, abstract copiado)",
+    )
     rp = sub.add_parser("report", help="resumen de cambios automáticos y og:image; regenera el grafo")
     rp.add_argument("--out", default="auditoria.json")
     rp.add_argument("--html", default="auditoria.html")
